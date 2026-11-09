@@ -15,6 +15,7 @@ description = "Roster is empty when no student is added"
 [9337267f-7793-4b90-9b4a-8e3978408824]
 description = "Add a student"
 include = false
+comment = "Test 'Add student / Multiple students in same grade': Excluded/handled via roster state check as AWK CLI scripts lack boolean return values."
 
 [6d0a30e4-1b4e-472e-8e20-c41702125667]
 description = "Student is added to the roster"
@@ -22,6 +23,7 @@ description = "Student is added to the roster"
 [73c3ca75-0c16-40d7-82f5-ed8fe17a8e4a]
 description = "Adding multiple students in the same grade in the roster"
 include = false
+comment = "Test 'Cannot add student to same grade more than once': AWK script silently ignores duplicate additions; verified via roster state."
 
 [233be705-dd58-4968-889d-fb3c7954c9cc]
 description = "Multiple students in the same grade are added to the roster"
@@ -29,6 +31,7 @@ description = "Multiple students in the same grade are added to the roster"
 [87c871c1-6bde-4413-9c44-73d59a259d83]
 description = "Cannot add student to same grade in the roster more than once"
 include = false
+comment = "Test 'A student can't be in two different grades': AWK lacks custom exception throwing; roster state evaluation provides coverage."
 
 [c125dab7-2a53-492f-a99a-56ad511940d8]
 description = "A student can't be in two different grades"
