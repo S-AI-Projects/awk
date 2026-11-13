@@ -1,5 +1,3 @@
-# This is an auto-generated file.
-#
 # Regenerating this file via `configlet sync` will:
 # - Recreate every `description` key/value pair
 # - Recreate every `reimplements` key/value pair, where they exist in problem-specifications
@@ -11,12 +9,15 @@
 
 [1fc316ed-17ab-4fba-88ef-3ae78296b692]
 description = "partial garden -> garden with single student"
+comment = "Keep included: verifies the single-student case. The reference uses FPAT=\"..\" to read each two-character cup pair as a field, then maps the plant codes to names for Alice."
 
 [acd19dc1-2200-4317-bc2a-08f021276b40]
 description = "partial garden -> different garden with single student"
+comment = "Keep included: verifies a different plant arrangement for a single student. It checks that the reference preserves cup order when mapping plant codes to plant names."
 
 [c376fcc8-349c-446c-94b0-903947315757]
 description = "partial garden -> garden with two students"
+comment = "Keep included: verifies assignment to the second student, Bob. The reference uses the student order in names and maps the two row-pairs assigned to Bob, ensuring his plants are not taken from Alice's columns."
 
 [2d620f45-9617-4924-9d27-751c80d17db9]
 description = "partial garden -> multiple students for the same garden with three students -> second student's garden"
