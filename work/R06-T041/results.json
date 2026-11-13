@@ -1,0 +1,48 @@
+{
+    "task": "R06-T041",
+    "exercise": "kindergarten-garden",
+    "timestamp": "2026-11-13T16:32:04.852252+05:30",
+    "inputs": {
+        "canonical_case_audit": {
+            "total": 17,
+            "included_before": 17,
+            "excluded_before": 0,
+            "included_after": 17,
+            "excluded_after": 0,
+            "toml_unchanged": true,
+            "decisions": {
+                "1fc316ed-17ab-4fba-88ef-3ae78296b692": "Keep included: verifies the basic single-student garden assignment.",
+                "acd19dc1-2200-4317-bc2a-08f021276b40": "Keep included: verifies a different plant arrangement for a single student.",
+                "c376fcc8-349c-446c-94b0-903947315757": "Keep included: verifies that the second student receives their own garden plants."
+            }
+        },
+        "config": "exercises/practice/kindergarten-garden/.meta/config.json",
+        "tests_toml": "exercises/practice/kindergarten-garden/.meta/tests.toml",
+        "bats_tests": "exercises/practice/kindergarten-garden/test-kindergarten-garden.bats",
+        "reference_solution": "exercises/practice/kindergarten-garden/.meta/example.awk",
+        "learner_solution": "exercises/practice/kindergarten-garden/kindergarten-garden.awk"
+    },
+    "expected": {
+        "tests": 17,
+        "return_code": 0,
+        "original_solution_unchanged": true
+    },
+    "actual": {
+        "planned_tests": 17,
+        "executed_tests": 17,
+        "passed_tests": 17,
+        "return_code": 0,
+        "original_solution_unchanged": true,
+        "stdout": "Processing kindergarten-garden\n1..17\nok 1 garden with single student\nok 2 different garden with single student\nok 3 garden with two students\nok 4 second student's garden\nok 5 third student's garden\nok 6 for Alice, first student's garden\nok 7 for Bob, second student's garden\nok 8 for Charlie\nok 9 for David\nok 10 for Eve\nok 11 for Fred\nok 12 for Ginny\nok 13 for Harriet\nok 14 for Ileana\nok 15 for Joseph\nok 16 for Kincaid, second to last student's garden\nok 17 for Larry, last student's garden\n",
+        "stderr": ""
+    },
+    "learner_solution_sha256_before": "e61ce8fd255c03b490317cd905114498a993eef8d8cd5056ae5bd4231915c3b4",
+    "learner_solution_sha256_after": "e61ce8fd255c03b490317cd905114498a993eef8d8cd5056ae5bd4231915c3b4",
+    "tool_versions": {
+        "python": "3.14.7",
+        "bash": "GNU bash, version 5.3.20(1)-release (aarch64-apple-darwin27.0.0)",
+        "bats": "Bats 1.14.0",
+        "gawk": "GNU Awk 5.4.1, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0)",
+        "jq": "jq-1.7.1-apple"
+    }
+}
