@@ -1,3 +1,8 @@
+# Complexity Analysis:
+# - Time Complexity: O(1) per record (hash table lookup in earth_ratio and constant arithmetic).
+#   For N records: O(N) total runtime.
+# - Space Complexity: O(1) auxiliary memory (fixed-size associative table of 8 planetary ratios).
+# Invariant: Each record is processed independently in constant time without memory retention.
 BEGIN {
     seconds_per_earth_year = 31557600
 
