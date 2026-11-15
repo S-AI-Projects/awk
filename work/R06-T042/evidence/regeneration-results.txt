@@ -1,0 +1,7 @@
+Reproducibility check: PASS
+Fresh repository copies: 2
+Timestamp normalization: generated timestamp line removed
+Other generated-file differences: none
+Expected test count: 9
+Actual test count: 9
+All expected test cases present: PASS

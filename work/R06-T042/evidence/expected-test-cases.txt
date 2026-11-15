@@ -1,0 +1,9 @@
+zero rows
+single row
+two rows
+three rows
+four rows
+five rows
+six rows
+ten rows
+two triangles
