@@ -1,0 +1,30 @@
+=== EXECUTION SUMMARY ===
+Exercise: tournament
+Timestamp: 2026-11-16T19:10:26.691708+00:00
+TOML Included Cases: 12
+TOML Excluded Cases: 0
+Executed Test Cases: 12
+Passed: 12, Failed: 0
+Determinism Check: PASSED
+
+=== ANCHOR VERIFICATION ===
+- just the header if no input: PASSED (Test #1)
+- a win is three points, a loss is zero points: PASSED (Test #2)
+- a win can also be expressed as a loss: PASSED (Test #3)
+
+=== VALIDATOR STDOUT/STDERR ===
+Processing tournament
+1..12
+ok 1 just the header if no input
+ok 2 a win is three points, a loss is zero points
+ok 3 a win can also be expressed as a loss
+ok 4 a different team can win
+ok 5 a draw is one point each
+ok 6 There can be more than one match
+ok 7 There can be more than one winner
+ok 8 There can be more than two teams
+ok 9 typical input
+ok 10 incomplete competition (not all pairs have played)
+ok 11 ties broken alphabetically
+ok 12 ensure points sorted numerically
+

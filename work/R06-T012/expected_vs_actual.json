@@ -1,0 +1,137 @@
+{
+  "exercise": "tournament",
+  "timestamp": "2026-11-16T19:10:26.691924+00:00",
+  "total_cases": 12,
+  "passed_cases": 12,
+  "failed_cases": 0,
+  "anchors": {
+    "just the header if no input": {
+      "verified": true,
+      "test_number": 1,
+      "description": "just the header if no input",
+      "status": "PASSED"
+    },
+    "a win is three points, a loss is zero points": {
+      "verified": true,
+      "test_number": 2,
+      "description": "a win is three points, a loss is zero points",
+      "status": "PASSED"
+    },
+    "a win can also be expressed as a loss": {
+      "verified": true,
+      "test_number": 3,
+      "description": "a win can also be expressed as a loss",
+      "status": "PASSED"
+    }
+  },
+  "cases": [
+    {
+      "test_number": 1,
+      "uuid": "67e9fab1-07c1-49cf-9159-bc8671cc7c9c",
+      "description": "just the header if no input",
+      "is_anchor": true,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "passed": true
+    },
+    {
+      "test_number": 2,
+      "uuid": "1b4a8aef-0734-4007-80a2-0626178c88f4",
+      "description": "a win is three points, a loss is zero points",
+      "is_anchor": true,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "passed": true
+    },
+    {
+      "test_number": 3,
+      "uuid": "5f45ac09-4efe-46e7-8ddb-75ad85f86e05",
+      "description": "a win can also be expressed as a loss",
+      "is_anchor": true,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "passed": true
+    },
+    {
+      "test_number": 4,
+      "uuid": "fd297368-efa0-442d-9f37-dd3f9a437239",
+      "description": "a different team can win",
+      "is_anchor": false,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "passed": true
+    },
+    {
+      "test_number": 5,
+      "uuid": "26c016f9-e753-4a93-94e9-842f7b4d70fc",
+      "description": "a draw is one point each",
+      "is_anchor": false,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "passed": true
+    },
+    {
+      "test_number": 6,
+      "uuid": "731204f6-4f34-4928-97eb-1c307ba83e62",
+      "description": "There can be more than one match",
+      "is_anchor": false,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "passed": true
+    },
+    {
+      "test_number": 7,
+      "uuid": "49dc2463-42af-4ea6-95dc-f06cc5776adf",
+      "description": "There can be more than one winner",
+      "is_anchor": false,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "passed": true
+    },
+    {
+      "test_number": 8,
+      "uuid": "6d930f33-435c-4e6f-9e2d-63fa85ce7dc7",
+      "description": "There can be more than two teams",
+      "is_anchor": false,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "passed": true
+    },
+    {
+      "test_number": 9,
+      "uuid": "97022974-0c8a-4a50-8fe7-e36bdd8a5945",
+      "description": "typical input",
+      "is_anchor": false,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "passed": true
+    },
+    {
+      "test_number": 10,
+      "uuid": "fe562f0d-ac0a-4c62-b9c9-44ee3236392b",
+      "description": "incomplete competition (not all pairs have played)",
+      "is_anchor": false,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "passed": true
+    },
+    {
+      "test_number": 11,
+      "uuid": "3aa0386f-150b-4f99-90bb-5195e7b7d3b8",
+      "description": "ties broken alphabetically",
+      "is_anchor": false,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "passed": true
+    },
+    {
+      "test_number": 12,
+      "uuid": "f9e20931-8a65-442a-81f6-503c0205b17a",
+      "description": "ensure points sorted numerically",
+      "is_anchor": false,
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "passed": true
+    }
+  ]
+}
