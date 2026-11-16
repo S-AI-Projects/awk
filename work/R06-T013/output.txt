@@ -1,0 +1,263 @@
+=== EXECUTION SUMMARY ===
+Exercise: protein-translation
+Task: R06-T013
+Timestamp: 2026-11-16T19:59:24.881252+00:00
+TOML Included Cases: 31
+Reference Run Exit Code: 0
+Reference Executed Tests: 31 (Passed: 31, Failed: 0)
+Mutant Run Exit Code: 1
+Mutant Executed Tests: 31 (Passed: 11, Failed: 20)
+Smallest Rejecting Case: Methionine RNA sequence (Test #2, UUID: 96d3d44f-34a2-4db4-84cd-fff523e069be)
+Failing Assertion: assert_output "Methionine"
+
+=== REFERENCE RUN STDOUT/STDERR ===
+Processing protein-translation
+1..31
+ok 1 Empty RNA sequence results in no proteins
+ok 2 Methionine RNA sequence
+ok 3 Phenylalanine RNA sequence 1
+ok 4 Phenylalanine RNA sequence 2
+ok 5 Leucine RNA sequence 1
+ok 6 Leucine RNA sequence 2
+ok 7 Serine RNA sequence 1
+ok 8 Serine RNA sequence 2
+ok 9 Serine RNA sequence 3
+ok 10 Serine RNA sequence 4
+ok 11 Tyrosine RNA sequence 1
+ok 12 Tyrosine RNA sequence 2
+ok 13 Cysteine RNA sequence 1
+ok 14 Cysteine RNA sequence 2
+ok 15 Tryptophan RNA sequence
+ok 16 STOP codon RNA sequence 1
+ok 17 STOP codon RNA sequence 2
+ok 18 STOP codon RNA sequence 3
+ok 19 Sequence of two protein codons translates into proteins
+ok 20 Sequence of two different protein codons translates into proteins
+ok 21 Translate RNA strand into correct protein list
+ok 22 Translation stops if STOP codon at beginning of sequence
+ok 23 Translation stops if STOP codon at end of two-codon sequence
+ok 24 Translation stops if STOP codon at end of three-codon sequence
+ok 25 Translation stops if STOP codon in middle of three-codon sequence
+ok 26 Translation stops if STOP codon in middle of six-codon sequence
+ok 27 Sequence of two non-STOP codons does not translate to a STOP codon
+ok 28 Non-existing codon can't translate
+ok 29 Unknown amino acids, not part of a codon, can't translate
+ok 30 Incomplete RNA sequence can't translate
+ok 31 Incomplete RNA sequence can translate if valid until a STOP codon
+
+
+
+=== MUTANT RUN STDOUT/STDERR ===
+Processing protein-translation
+1..31
+ok 1 Empty RNA sequence results in no proteins
+not ok 2 Methionine RNA sequence
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-protein-translation.bats, line 17)
+#   `assert_output "Methionine"' failed
+#
+# -- output differs --
+# expected : Methionine
+# actual   :
+# --
+#
+not ok 3 Phenylalanine RNA sequence 1
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-protein-translation.bats, line 24)
+#   `assert_output "Phenylalanine"' failed
+#
+# -- output differs --
+# expected : Phenylalanine
+# actual   :
+# --
+#
+not ok 4 Phenylalanine RNA sequence 2
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-protein-translation.bats, line 31)
+#   `assert_output "Phenylalanine"' failed
+#
+# -- output differs --
+# expected : Phenylalanine
+# actual   :
+# --
+#
+not ok 5 Leucine RNA sequence 1
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-protein-translation.bats, line 38)
+#   `assert_output "Leucine"' failed
+#
+# -- output differs --
+# expected : Leucine
+# actual   :
+# --
+#
+not ok 6 Leucine RNA sequence 2
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-protein-translation.bats, line 45)
+#   `assert_output "Leucine"' failed
+#
+# -- output differs --
+# expected : Leucine
+# actual   :
+# --
+#
+not ok 7 Serine RNA sequence 1
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-protein-translation.bats, line 52)
+#   `assert_output "Serine"' failed
+#
+# -- output differs --
+# expected : Serine
+# actual   :
+# --
+#
+not ok 8 Serine RNA sequence 2
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-protein-translation.bats, line 59)
+#   `assert_output "Serine"' failed
+#
+# -- output differs --
+# expected : Serine
+# actual   :
+# --
+#
+not ok 9 Serine RNA sequence 3
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-protein-translation.bats, line 66)
+#   `assert_output "Serine"' failed
+#
+# -- output differs --
+# expected : Serine
+# actual   :
+# --
+#
+not ok 10 Serine RNA sequence 4
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-protein-translation.bats, line 73)
+#   `assert_output "Serine"' failed
+#
+# -- output differs --
+# expected : Serine
+# actual   :
+# --
+#
+not ok 11 Tyrosine RNA sequence 1
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-protein-translation.bats, line 80)
+#   `assert_output "Tyrosine"' failed
+#
+# -- output differs --
+# expected : Tyrosine
+# actual   :
+# --
+#
+not ok 12 Tyrosine RNA sequence 2
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-protein-translation.bats, line 87)
+#   `assert_output "Tyrosine"' failed
+#
+# -- output differs --
+# expected : Tyrosine
+# actual   :
+# --
+#
+not ok 13 Cysteine RNA sequence 1
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-protein-translation.bats, line 94)
+#   `assert_output "Cysteine"' failed
+#
+# -- output differs --
+# expected : Cysteine
+# actual   :
+# --
+#
+not ok 14 Cysteine RNA sequence 2
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-protein-translation.bats, line 101)
+#   `assert_output "Cysteine"' failed
+#
+# -- output differs --
+# expected : Cysteine
+# actual   :
+# --
+#
+not ok 15 Tryptophan RNA sequence
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-protein-translation.bats, line 108)
+#   `assert_output "Tryptophan"' failed
+#
+# -- output differs --
+# expected : Tryptophan
+# actual   :
+# --
+#
+ok 16 STOP codon RNA sequence 1
+ok 17 STOP codon RNA sequence 2
+ok 18 STOP codon RNA sequence 3
+not ok 19 Sequence of two protein codons translates into proteins
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-protein-translation.bats, line 136)
+#   `assert_output "Phenylalanine Phenylalanine"' failed
+#
+# -- output differs --
+# expected : Phenylalanine Phenylalanine
+# actual   : Phenylalanine
+# --
+#
+not ok 20 Sequence of two different protein codons translates into proteins
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-protein-translation.bats, line 143)
+#   `assert_output "Leucine Leucine"' failed
+#
+# -- output differs --
+# expected : Leucine Leucine
+# actual   : Leucine
+# --
+#
+not ok 21 Translate RNA strand into correct protein list
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-protein-translation.bats, line 150)
+#   `assert_output "Methionine Phenylalanine Tryptophan"' failed
+#
+# -- output differs --
+# expected : Methionine Phenylalanine Tryptophan
+# actual   : Methionine Phenylalanine
+# --
+#
+ok 22 Translation stops if STOP codon at beginning of sequence
+ok 23 Translation stops if STOP codon at end of two-codon sequence
+ok 24 Translation stops if STOP codon at end of three-codon sequence
+ok 25 Translation stops if STOP codon in middle of three-codon sequence
+ok 26 Translation stops if STOP codon in middle of six-codon sequence
+not ok 27 Sequence of two non-STOP codons does not translate to a STOP codon
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-protein-translation.bats, line 192)
+#   `assert_output "Methionine Methionine"' failed
+#
+# -- output differs --
+# expected : Methionine Methionine
+# actual   : Methionine
+# --
+#
+not ok 28 Non-existing codon can't translate
+# (from function `assert_failure' in file bats-extra.bash, line 190,
+#  in test file test-protein-translation.bats, line 198)
+#   `assert_failure' failed
+#
+# -- command succeeded, but it was expected to fail --
+# output :
+# --
+#
+not ok 29 Unknown amino acids, not part of a codon, can't translate
+# (from function `assert_failure' in file bats-extra.bash, line 190,
+#  in test file test-protein-translation.bats, line 205)
+#   `assert_failure' failed
+#
+# -- command succeeded, but it was expected to fail --
+# output :
+# --
+#
+ok 30 Incomplete RNA sequence can't translate
+ok 31 Incomplete RNA sequence can translate if valid until a STOP codon
+
+
