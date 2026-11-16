@@ -1,0 +1,25 @@
+=== EXECUTION SUMMARY ===
+TOML Included Cases: 1
+TOML Excluded Cases: 5
+Executed Test Cases: 15
+Passed: 15, Failed: 0
+
+=== VALIDATOR STDOUT/STDERR ===
+Processing grade-school
+1..15
+ok 1 Roster is empty when no student is added
+ok 2 Student is added to the roster
+ok 3 Multiple students in the same grade are added to the roster
+ok 4 Student not added to same grade in the roster more than once
+ok 5 Students in multiple grades are added to the roster
+ok 6 Student not added to multiple grades in the roster
+ok 7 Students are sorted by grades in the roster
+ok 8 Students are sorted by name in the roster
+ok 9 Students are sorted by grades and then by name in the roster
+ok 10 Grade is empty if no students in the roster
+ok 11 Grade is empty if no students in that grade
+ok 12 Student not added to same grade more than once
+ok 13 Student not added to multiple grades
+ok 14 Student not added to other grade for multiple grades
+ok 15 Students are sorted by name in a grade
+
