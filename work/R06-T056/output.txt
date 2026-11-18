@@ -1,0 +1,30 @@
+=== EXECUTION SUMMARY ===
+Reference Tests Passed: 8, Failed: 0
+Alternative Tests Passed: 8, Failed: 0
+Named Cases Verified: empty plaintext results in an empty ciphertext, normalization results in empty plaintext, Lowercase
+Output Agreement: EXACT MATCH on all inputs
+
+=== REFERENCE VALIDATOR OUTPUT ===
+Processing crypto-square
+1..8
+ok 1 empty plaintext results in an empty ciphertext
+ok 2 normalization results in empty plaintext
+ok 3 Lowercase
+ok 4 Remove spaces
+ok 5 Remove punctuation
+ok 6 9 character plaintext results in 3 chunks of 3 characters
+ok 7 8 character plaintext results in 3 chunks, the last one with a trailing space
+ok 8 54 character plaintext results in 8 chunks, the last two with trailing spaces
+
+=== ALTERNATIVE VALIDATOR OUTPUT ===
+Processing crypto-square
+1..8
+ok 1 empty plaintext results in an empty ciphertext
+ok 2 normalization results in empty plaintext
+ok 3 Lowercase
+ok 4 Remove spaces
+ok 5 Remove punctuation
+ok 6 9 character plaintext results in 3 chunks of 3 characters
+ok 7 8 character plaintext results in 3 chunks, the last one with a trailing space
+ok 8 54 character plaintext results in 8 chunks, the last two with trailing spaces
+
