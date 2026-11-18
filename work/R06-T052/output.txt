@@ -1,0 +1,17 @@
+=== EXECUTION SUMMARY ===
+Executed Test Cases: 8
+Passed: 8, Failed: 0
+Anchor Cases: first_generic_verse, 3rd_last_generic_verse, 2nd_last_generic_verse
+
+=== VALIDATOR OUTPUT ===
+Processing beer-song
+1..8
+ok 1 first_generic_verse
+ok 2 3rd_last_generic_verse
+ok 3 2nd_last_generic_verse
+ok 4 penultimate_verse
+ok 5 verse_with_zero_bottles
+ok 6 first_two_verses
+ok 7 last_three_verses
+ok 8 all_verses
+
