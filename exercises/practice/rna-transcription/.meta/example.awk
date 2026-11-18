@@ -1,21 +1,24 @@
 BEGIN {
+    # Setting FS to empty string splits each character into its own field ($1 to $NF)
     FS = ""
-    translation["G"] = "C"
-    translation["C"] = "G"
-    translation["A"] = "U"
-    translation["T"] = "A"
 
+    # Exercise invariant: Map each DNA nucleotide to its RNA complement
+    complement["G"] = "C"
+    complement["C"] = "G"
+    complement["T"] = "A"
+    complement["A"] = "U"
 }
 
 {
-    out = ""
+    rna = ""
     for (i = 1; i <= NF; i++) {
-        if ($i in translation) {
-            out = out translation[$i]
+        nucleotide = $i
+        if (nucleotide in complement) {
+            rna = rna complement[nucleotide]
         } else {
             print "Invalid nucleotide detected." > "/dev/stderr"
             exit 1
         }
     }
-    print out 
+    print rna
 }
