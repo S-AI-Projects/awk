@@ -1,0 +1,156 @@
+=== EXECUTION SUMMARY ===
+Original Total Tests: 29
+Original Passed: 29
+Original Failed: 0
+Named Cases Verified: just a number, just a zero, just a negative number
+Mutant Target: looks_like_a_number stripped of [+-]?
+Mutant Result: FAILED (as expected)
+Rejecting Test: just a negative number
+
+=== ORIGINAL VALIDATOR OUTPUT ===
+Processing wordy
+1..29
+ok 1 just a number
+ok 2 just a zero
+ok 3 just a negative number
+ok 4 addition
+ok 5 addition with a left hand zero
+ok 6 addition with a right hand zero
+ok 7 more addition
+ok 8 addition with negative numbers
+ok 9 large addition
+ok 10 subtraction
+ok 11 multiplication
+ok 12 division
+ok 13 multiple additions
+ok 14 addition and subtraction
+ok 15 multiple subtraction
+ok 16 subtraction then addition
+ok 17 multiple multiplication
+ok 18 addition and multiplication
+ok 19 multiple division
+ok 20 unknown operation
+ok 21 Non math question
+ok 22 reject problem missing an operand
+ok 23 reject problem with no operands or operators
+ok 24 reject two operations in a row
+ok 25 reject two numbers in a row
+ok 26 reject postfix notation
+ok 27 reject prefix notation
+ok 28 strict left to right, ignores typical order of operations
+ok 29 reject problem with no operands
+
+=== MUTANT VALIDATOR OUTPUT ===
+Processing wordy
+1..29
+ok 1 just a number
+ok 2 just a zero
+not ok 3 just a negative number
+# (from function `assert_success' in file bats-extra.bash, line 409,
+#  in test file test-wordy.bats, line 23)
+#   `assert_success' failed
+#
+# -- command failed --
+# status : 1
+# output : syntax error
+# --
+#
+ok 4 addition
+ok 5 addition with a left hand zero
+ok 6 addition with a right hand zero
+ok 7 more addition
+not ok 8 addition with negative numbers
+# (from function `assert_success' in file bats-extra.bash, line 409,
+#  in test file test-wordy.bats, line 58)
+#   `assert_success' failed
+#
+# -- command failed --
+# status : 1
+# output : syntax error
+# --
+#
+ok 9 large addition
+not ok 10 subtraction
+# (from function `assert_success' in file bats-extra.bash, line 409,
+#  in test file test-wordy.bats, line 72)
+#   `assert_success' failed
+#
+# -- command failed --
+# status : 1
+# output : syntax error
+# --
+#
+not ok 11 multiplication
+# (from function `assert_success' in file bats-extra.bash, line 409,
+#  in test file test-wordy.bats, line 79)
+#   `assert_success' failed
+#
+# -- command failed --
+# status : 1
+# output : syntax error
+# --
+#
+not ok 12 division
+# (from function `assert_success' in file bats-extra.bash, line 409,
+#  in test file test-wordy.bats, line 86)
+#   `assert_success' failed
+#
+# -- command failed --
+# status : 1
+# output : syntax error
+# --
+#
+ok 13 multiple additions
+not ok 14 addition and subtraction
+# (from function `assert_success' in file bats-extra.bash, line 409,
+#  in test file test-wordy.bats, line 100)
+#   `assert_success' failed
+#
+# -- command failed --
+# status : 1
+# output : syntax error
+# --
+#
+ok 15 multiple subtraction
+ok 16 subtraction then addition
+not ok 17 multiple multiplication
+# (from function `assert_success' in file bats-extra.bash, line 409,
+#  in test file test-wordy.bats, line 121)
+#   `assert_success' failed
+#
+# -- command failed --
+# status : 1
+# output : syntax error
+# --
+#
+not ok 18 addition and multiplication
+# (from function `assert_success' in file bats-extra.bash, line 409,
+#  in test file test-wordy.bats, line 128)
+#   `assert_success' failed
+#
+# -- command failed --
+# status : 1
+# output : syntax error
+# --
+#
+not ok 19 multiple division
+# (from function `assert_success' in file bats-extra.bash, line 409,
+#  in test file test-wordy.bats, line 135)
+#   `assert_success' failed
+#
+# -- command failed --
+# status : 1
+# output : syntax error
+# --
+#
+ok 20 unknown operation
+ok 21 Non math question
+ok 22 reject problem missing an operand
+ok 23 reject problem with no operands or operators
+ok 24 reject two operations in a row
+ok 25 reject two numbers in a row
+ok 26 reject postfix notation
+ok 27 reject prefix notation
+ok 28 strict left to right, ignores typical order of operations
+ok 29 reject problem with no operands
+
