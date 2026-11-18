@@ -1,0 +1,19 @@
+=== EXECUTION SUMMARY ===
+TOML Included Cases: 9
+TOML Excluded Cases: 0
+Executed Test Cases: 9
+Passed: 9, Failed: 0
+
+=== VALIDATOR OUTPUT ===
+Processing difference-of-squares
+1..9
+ok 1 square of sum 1
+ok 2 square of sum 5
+ok 3 square of sum 100
+ok 4 sum of squares 1
+ok 5 sum of squares 5
+ok 6 sum of squares 100
+ok 7 difference of squares 1
+ok 8 difference of squares 5
+ok 9 difference of squares 100
+
