@@ -1,0 +1,17 @@
+=== EXECUTION SUMMARY ===
+Executed Test Cases: 7
+Passed: 7, Failed: 0
+Named Cases Verified: no items, one item, too heavy, five items (cannot be greedy by weight)
+Metadata Fixture Validation: PASS
+
+=== VALIDATOR OUTPUT ===
+Processing knapsack
+1..7
+ok 1 no items
+ok 2 one item, too heavy
+ok 3 five items (cannot be greedy by weight)
+ok 4 five items (cannot be greedy by value)
+ok 5 example knapsack
+ok 6 8 items
+ok 7 15 items
+
