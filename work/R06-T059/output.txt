@@ -1,0 +1,24 @@
+=== EXECUTION SUMMARY ===
+Executed Test Cases: 14
+Passed: 14, Failed: 0
+Named Cases Verified: empty string, isogram with only lower case characters, word with one duplicated character
+Isolation Mode Tests: PASS (standard, failing-reference, empty-tests)
+
+=== VALIDATOR OUTPUT ===
+Processing isogram
+1..14
+ok 1 empty string
+ok 2 isogram with only lower case characters
+ok 3 word with one duplicated character
+ok 4 word with one duplicated character from the end of the alphabet
+ok 5 longest reported english isogram
+ok 6 word with duplicated character in mixed case
+ok 7 word with duplicated character in mixed case, lowercase first
+ok 8 hypothetical isogrammic word with hyphen
+ok 9 hypothetical word with duplicated character following hyphen
+ok 10 isogram with duplicated hyphen
+ok 11 made-up name that is an isogram
+ok 12 duplicated character in the middle
+ok 13 same first and last characters
+ok 14 word with duplicated character and with two hyphens
+
