@@ -19,8 +19,13 @@ $2 == "list" {
     print join(list, 1, n, FS)
 }
 
-function is_allergic_to(score, allergen) {
-    return and(rshift(score, allergies[allergen]), 1) == 1
+# An allergen score is a bitfield where each allergen corresponds to a bit flag (2^i).
+# allergies[allergen] stores the zero-based bit shift offset (0 for eggs, 1 for peanuts, etc.).
+# Right-shifting the score by shift_offset positions the allergen's bit at bit 0,
+# allowing a bitwise AND with 1 to determine if the person is allergic.
+function is_allergic_to(score, allergen,    shift_offset) {
+    shift_offset = allergies[allergen]
+    return and(rshift(score, shift_offset), 1) == 1
 }
 
 function list_allergies(score, result,    i) {

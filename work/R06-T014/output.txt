@@ -1,0 +1,71 @@
+=== EXECUTION SUMMARY ===
+Exercise: allergies
+Task: R06-T014
+Timestamp: 2026-11-19T14:15:52.412902+00:00
+Validator Exit Code: 0
+Total Tests Executed: 50
+Tests Passed: 50
+Tests Failed: 0
+Learner Stub Status: Untouched (unsolved)
+
+=== NAMED BASELINE CASES ===
+1. testing for eggs allergy: not allergic to anything (Input: '0,allergic_to,eggs' -> Output: 'false') [PASSED]
+2. testing for eggs allergy: allergic only to eggs (Input: '1,allergic_to,eggs' -> Output: 'true') [PASSED]
+3. testing for eggs allergy: allergic to eggs and something else (Input: '3,allergic_to,eggs' -> Output: 'true') [PASSED]
+
+=== VALIDATOR STDOUT ===
+Processing allergies
+1..50
+ok 1 testing for eggs allergy: not allergic to anything
+ok 2 testing for eggs allergy: allergic only to eggs
+ok 3 testing for eggs allergy: allergic to eggs and something else
+ok 4 testing for eggs allergy: allergic to something, but not eggs
+ok 5 testing for eggs allergy: allergic to everything
+ok 6 testing for peanuts allergy: not allergic to anything
+ok 7 testing for peanuts allergy: allergic only to peanuts
+ok 8 testing for peanuts allergy: allergic to peanuts and something else
+ok 9 testing for peanuts allergy: allergic to something, but not peanuts
+ok 10 testing for peanuts allergy: allergic to everything
+ok 11 testing for shellfish allergy: not allergic to anything
+ok 12 testing for shellfish allergy: allergic only to shellfish
+ok 13 testing for shellfish allergy: allergic to shellfish and something else
+ok 14 testing for shellfish allergy: allergic to something, but not shellfish
+ok 15 testing for shellfish allergy: allergic to everything
+ok 16 testing for strawberries allergy: not allergic to anything
+ok 17 testing for strawberries allergy: allergic only to strawberries
+ok 18 testing for strawberries allergy: allergic to strawberries and something else
+ok 19 testing for strawberries allergy: allergic to something, but not strawberries
+ok 20 testing for strawberries allergy: allergic to everything
+ok 21 testing for tomatoes allergy: not allergic to anything
+ok 22 testing for tomatoes allergy: allergic only to tomatoes
+ok 23 testing for tomatoes allergy: allergic to tomatoes and something else
+ok 24 testing for tomatoes allergy: allergic to something, but not tomatoes
+ok 25 testing for tomatoes allergy: allergic to everything
+ok 26 testing for chocolate allergy: not allergic to anything
+ok 27 testing for chocolate allergy: allergic only to chocolate
+ok 28 testing for chocolate allergy: allergic to chocolate and something else
+ok 29 testing for chocolate allergy: allergic to something, but not chocolate
+ok 30 testing for chocolate allergy: allergic to everything
+ok 31 testing for pollen allergy: not allergic to anything
+ok 32 testing for pollen allergy: allergic only to pollen
+ok 33 testing for pollen allergy: allergic to pollen and something else
+ok 34 testing for pollen allergy: allergic to something, but not pollen
+ok 35 testing for pollen allergy: allergic to everything
+ok 36 testing for cats allergy: not allergic to anything
+ok 37 testing for cats allergy: allergic only to cats
+ok 38 testing for cats allergy: allergic to cats and something else
+ok 39 testing for cats allergy: allergic to something, but not cats
+ok 40 testing for cats allergy: allergic to everything
+ok 41 list when:: no allergies
+ok 42 list when:: just eggs
+ok 43 list when:: just peanuts
+ok 44 list when:: just strawberries
+ok 45 list when:: eggs and peanuts
+ok 46 list when:: more than eggs but not peanuts
+ok 47 list when:: lots of stuff
+ok 48 list when:: everything
+ok 49 list when:: no allergen score parts
+ok 50 list when:: no allergen score parts without highest valid score
+
+=== VALIDATOR STDERR ===
+

@@ -1,0 +1,436 @@
+{
+  "exercise": "allergies",
+  "task": "R06-T014",
+  "timestamp": "2026-11-19T14:15:52.413190+00:00",
+  "validator_run": {
+    "exit_code": 0,
+    "total_cases": 50,
+    "passed_cases": 50,
+    "failed_cases": 0
+  },
+  "named_baseline_cases": [
+    {
+      "test_number": 1,
+      "description": "testing for eggs allergy: not allergic to anything",
+      "input": "0,allergic_to,eggs",
+      "expected_output": "false",
+      "status": "PASS"
+    },
+    {
+      "test_number": 2,
+      "description": "testing for eggs allergy: allergic only to eggs",
+      "input": "1,allergic_to,eggs",
+      "expected_output": "true",
+      "status": "PASS"
+    },
+    {
+      "test_number": 3,
+      "description": "testing for eggs allergy: allergic to eggs and something else",
+      "input": "3,allergic_to,eggs",
+      "expected_output": "true",
+      "status": "PASS"
+    }
+  ],
+  "all_cases": [
+    {
+      "test_number": 1,
+      "description": "testing for eggs allergy: not allergic to anything",
+      "input": "0,allergic_to,eggs",
+      "expected_output": "false",
+      "actual_status": "ok",
+      "is_named_baseline_case": true
+    },
+    {
+      "test_number": 2,
+      "description": "testing for eggs allergy: allergic only to eggs",
+      "input": "1,allergic_to,eggs",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": true
+    },
+    {
+      "test_number": 3,
+      "description": "testing for eggs allergy: allergic to eggs and something else",
+      "input": "3,allergic_to,eggs",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": true
+    },
+    {
+      "test_number": 4,
+      "description": "testing for eggs allergy: allergic to something, but not eggs",
+      "input": "2,allergic_to,eggs",
+      "expected_output": "false",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 5,
+      "description": "testing for eggs allergy: allergic to everything",
+      "input": "255,allergic_to,eggs",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 6,
+      "description": "testing for peanuts allergy: not allergic to anything",
+      "input": "0,allergic_to,peanuts",
+      "expected_output": "false",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 7,
+      "description": "testing for peanuts allergy: allergic only to peanuts",
+      "input": "2,allergic_to,peanuts",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 8,
+      "description": "testing for peanuts allergy: allergic to peanuts and something else",
+      "input": "7,allergic_to,peanuts",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 9,
+      "description": "testing for peanuts allergy: allergic to something, but not peanuts",
+      "input": "5,allergic_to,peanuts",
+      "expected_output": "false",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 10,
+      "description": "testing for peanuts allergy: allergic to everything",
+      "input": "255,allergic_to,peanuts",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 11,
+      "description": "testing for shellfish allergy: not allergic to anything",
+      "input": "0,allergic_to,shellfish",
+      "expected_output": "false",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 12,
+      "description": "testing for shellfish allergy: allergic only to shellfish",
+      "input": "4,allergic_to,shellfish",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 13,
+      "description": "testing for shellfish allergy: allergic to shellfish and something else",
+      "input": "14,allergic_to,shellfish",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 14,
+      "description": "testing for shellfish allergy: allergic to something, but not shellfish",
+      "input": "10,allergic_to,shellfish",
+      "expected_output": "false",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 15,
+      "description": "testing for shellfish allergy: allergic to everything",
+      "input": "255,allergic_to,shellfish",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 16,
+      "description": "testing for strawberries allergy: not allergic to anything",
+      "input": "0,allergic_to,strawberries",
+      "expected_output": "false",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 17,
+      "description": "testing for strawberries allergy: allergic only to strawberries",
+      "input": "8,allergic_to,strawberries",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 18,
+      "description": "testing for strawberries allergy: allergic to strawberries and something else",
+      "input": "28,allergic_to,strawberries",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 19,
+      "description": "testing for strawberries allergy: allergic to something, but not strawberries",
+      "input": "20,allergic_to,strawberries",
+      "expected_output": "false",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 20,
+      "description": "testing for strawberries allergy: allergic to everything",
+      "input": "255,allergic_to,strawberries",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 21,
+      "description": "testing for tomatoes allergy: not allergic to anything",
+      "input": "0,allergic_to,tomatoes",
+      "expected_output": "false",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 22,
+      "description": "testing for tomatoes allergy: allergic only to tomatoes",
+      "input": "16,allergic_to,tomatoes",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 23,
+      "description": "testing for tomatoes allergy: allergic to tomatoes and something else",
+      "input": "56,allergic_to,tomatoes",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 24,
+      "description": "testing for tomatoes allergy: allergic to something, but not tomatoes",
+      "input": "40,allergic_to,tomatoes",
+      "expected_output": "false",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 25,
+      "description": "testing for tomatoes allergy: allergic to everything",
+      "input": "255,allergic_to,tomatoes",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 26,
+      "description": "testing for chocolate allergy: not allergic to anything",
+      "input": "0,allergic_to,chocolate",
+      "expected_output": "false",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 27,
+      "description": "testing for chocolate allergy: allergic only to chocolate",
+      "input": "32,allergic_to,chocolate",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 28,
+      "description": "testing for chocolate allergy: allergic to chocolate and something else",
+      "input": "112,allergic_to,chocolate",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 29,
+      "description": "testing for chocolate allergy: allergic to something, but not chocolate",
+      "input": "80,allergic_to,chocolate",
+      "expected_output": "false",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 30,
+      "description": "testing for chocolate allergy: allergic to everything",
+      "input": "255,allergic_to,chocolate",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 31,
+      "description": "testing for pollen allergy: not allergic to anything",
+      "input": "0,allergic_to,pollen",
+      "expected_output": "false",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 32,
+      "description": "testing for pollen allergy: allergic only to pollen",
+      "input": "64,allergic_to,pollen",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 33,
+      "description": "testing for pollen allergy: allergic to pollen and something else",
+      "input": "224,allergic_to,pollen",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 34,
+      "description": "testing for pollen allergy: allergic to something, but not pollen",
+      "input": "160,allergic_to,pollen",
+      "expected_output": "false",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 35,
+      "description": "testing for pollen allergy: allergic to everything",
+      "input": "255,allergic_to,pollen",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 36,
+      "description": "testing for cats allergy: not allergic to anything",
+      "input": "0,allergic_to,cats",
+      "expected_output": "false",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 37,
+      "description": "testing for cats allergy: allergic only to cats",
+      "input": "128,allergic_to,cats",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 38,
+      "description": "testing for cats allergy: allergic to cats and something else",
+      "input": "192,allergic_to,cats",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 39,
+      "description": "testing for cats allergy: allergic to something, but not cats",
+      "input": "64,allergic_to,cats",
+      "expected_output": "false",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 40,
+      "description": "testing for cats allergy: allergic to everything",
+      "input": "255,allergic_to,cats",
+      "expected_output": "true",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 41,
+      "description": "list when:: no allergies",
+      "input": "0,list",
+      "expected_output": "",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 42,
+      "description": "list when:: just eggs",
+      "input": "1,list",
+      "expected_output": "eggs",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 43,
+      "description": "list when:: just peanuts",
+      "input": "2,list",
+      "expected_output": "peanuts",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 44,
+      "description": "list when:: just strawberries",
+      "input": "8,list",
+      "expected_output": "strawberries",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 45,
+      "description": "list when:: eggs and peanuts",
+      "input": "3,list",
+      "expected_output": "eggs,peanuts",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 46,
+      "description": "list when:: more than eggs but not peanuts",
+      "input": "5,list",
+      "expected_output": "eggs,shellfish",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 47,
+      "description": "list when:: lots of stuff",
+      "input": "248,list",
+      "expected_output": "strawberries,tomatoes,chocolate,pollen,cats",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 48,
+      "description": "list when:: everything",
+      "input": "255,list",
+      "expected_output": "eggs,peanuts,shellfish,strawberries,tomatoes,chocolate,pollen,cats",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 49,
+      "description": "list when:: no allergen score parts",
+      "input": "509,list",
+      "expected_output": "eggs,shellfish,strawberries,tomatoes,chocolate,pollen,cats",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 50,
+      "description": "list when:: no allergen score parts without highest valid score",
+      "input": "257,list",
+      "expected_output": "eggs",
+      "actual_status": "ok",
+      "is_named_baseline_case": false
+    }
+  ]
+}
