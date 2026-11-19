@@ -1,0 +1,47 @@
+=== EXECUTION SUMMARY ===
+Exercise: triangle
+Task: R06-T015
+Timestamp: 2026-11-19T14:21:23.792545+00:00
+Validator Exit Code: 0
+Total Tests Executed: 21
+Tests Passed: 21
+Tests Failed: 0
+Learner Stub Status: Untouched (unsolved)
+
+=== NAMED BASELINE CASES ===
+1. all sides are equal, equilateral: PASS
+2. any side is unequal, equilateral: PASS
+3. no sides are equal, equilateral: PASS
+
+=== SCALING & COMPLEXITY MEASUREMENTS ===
+Process Startup Overhead (median of 5): 6.463 ms
+Record Scaling (Median of 5 runs per size):
+ - 1 records: Median Total=6.192 ms, Net Algorithm=0.001 ms, Per-record=1.0 us
+ - 10 records: Median Total=6.396 ms, Net Algorithm=0.001 ms, Per-record=0.1 us
+ - 100 records: Median Total=6.351 ms, Net Algorithm=0.001 ms, Per-record=0.01 us
+
+=== VALIDATOR STDOUT ===
+Processing triangle
+1..21
+ok 1 all sides are equal, equilateral
+ok 2 any side is unequal, equilateral
+ok 3 no sides are equal, equilateral
+ok 4 all zero sides is not a triangle, equilateral
+ok 5 sides may be floats, equilateral
+ok 6 last two sides are equal, isosceles
+ok 7 first two sides are equal, isosceles
+ok 8 first and last sides are equal, isosceles
+ok 9 equilateral triangles are also isosceles, isosceles
+ok 10 no sides are equal, isosceles
+ok 11 first triangle inequality violation, isosceles
+ok 12 second triangle inequality violation, isosceles
+ok 13 third triangle inequality violation, isosceles
+ok 14 sides may be floats, isosceles
+ok 15 no sides are equal, scalene
+ok 16 all sides are equal, scalene
+ok 17 first and second sides are equal, scalene
+ok 18 first and third sides are equal, scalene
+ok 19 second and third sides are equal, scalene
+ok 20 may not violate triangle inequality, scalene
+ok 21 sides may be floats, scalene
+
