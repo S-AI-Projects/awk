@@ -1,0 +1,112 @@
+{
+  "exercise": "hamming",
+  "task": "R06-T016",
+  "timestamp": "2026-11-19T15:13:41.517666+00:00",
+  "approaches_evaluated": {
+    "approach_a": {
+      "name": "Positional Field-Splitting (Reference)",
+      "file": "exercises/practice/hamming/.meta/example.awk",
+      "exit_code": 0,
+      "passed_tests": 9,
+      "total_tests": 9
+    },
+    "approach_b": {
+      "name": "Direct Substring Scanning (Alternative)",
+      "file": "work/R06-T016/alternative.awk",
+      "exit_code": 0,
+      "passed_tests": 9,
+      "total_tests": 9
+    }
+  },
+  "named_baseline_cases": [
+    {
+      "test_number": 1,
+      "description": "empty strands",
+      "input": "'' vs ''",
+      "expected_output": "0",
+      "approach_a_result": "PASS",
+      "approach_b_result": "PASS"
+    },
+    {
+      "test_number": 2,
+      "description": "single letter identical strands",
+      "input": "'A' vs 'A'",
+      "expected_output": "0",
+      "approach_a_result": "PASS",
+      "approach_b_result": "PASS"
+    },
+    {
+      "test_number": 3,
+      "description": "single letter different strands",
+      "input": "'G' vs 'T'",
+      "expected_output": "1",
+      "approach_a_result": "PASS",
+      "approach_b_result": "PASS"
+    }
+  ],
+  "cases": [
+    {
+      "test_number": 1,
+      "description": "empty strands",
+      "approach_a_status": "ok",
+      "approach_b_status": "ok",
+      "is_named_baseline_case": true
+    },
+    {
+      "test_number": 2,
+      "description": "single letter identical strands",
+      "approach_a_status": "ok",
+      "approach_b_status": "ok",
+      "is_named_baseline_case": true
+    },
+    {
+      "test_number": 3,
+      "description": "single letter different strands",
+      "approach_a_status": "ok",
+      "approach_b_status": "ok",
+      "is_named_baseline_case": true
+    },
+    {
+      "test_number": 4,
+      "description": "long identical strands",
+      "approach_a_status": "ok",
+      "approach_b_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 5,
+      "description": "long different strands",
+      "approach_a_status": "ok",
+      "approach_b_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 6,
+      "description": "disallow first strand longer",
+      "approach_a_status": "ok",
+      "approach_b_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 7,
+      "description": "disallow second strand longer",
+      "approach_a_status": "ok",
+      "approach_b_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 8,
+      "description": "disallow empty first strand",
+      "approach_a_status": "ok",
+      "approach_b_status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 9,
+      "description": "disallow empty second strand",
+      "approach_a_status": "ok",
+      "approach_b_status": "ok",
+      "is_named_baseline_case": false
+    }
+  ]
+}

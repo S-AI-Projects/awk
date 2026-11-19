@@ -1,0 +1,44 @@
+=== EXECUTION SUMMARY ===
+Exercise: hamming
+Task: R06-T016
+Timestamp: 2026-11-19T15:13:41.517408+00:00
+Learner Stub Status: Untouched (unsolved)
+
+=== APPROACH A: REFERENCE (FIELD-SPLITTING) ===
+Validator Exit Code: 0
+Tests Executed: 9 (Passed: 9, Failed: 0)
+
+=== APPROACH B: ALTERNATIVE (SUBSTR EXTRACTION) ===
+Bats Exit Code: 0
+Tests Executed: 9 (Passed: 9, Failed: 0)
+
+=== NAMED BASELINE CASES (BOTH PASSED) ===
+1. empty strands: PASS (Output: 0)
+2. single letter identical strands: PASS (Output: 0)
+3. single letter different strands: PASS (Output: 1)
+
+=== APPROACH A OUTPUT ===
+Processing hamming
+1..9
+ok 1 empty strands
+ok 2 single letter identical strands
+ok 3 single letter different strands
+ok 4 long identical strands
+ok 5 long different strands
+ok 6 disallow first strand longer
+ok 7 disallow second strand longer
+ok 8 disallow empty first strand
+ok 9 disallow empty second strand
+
+=== APPROACH B OUTPUT ===
+1..9
+ok 1 empty strands
+ok 2 single letter identical strands
+ok 3 single letter different strands
+ok 4 long identical strands
+ok 5 long different strands
+ok 6 disallow first strand longer
+ok 7 disallow second strand longer
+ok 8 disallow empty first strand
+ok 9 disallow empty second strand
+
