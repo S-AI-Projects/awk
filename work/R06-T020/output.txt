@@ -1,0 +1,43 @@
+=== EXECUTION SUMMARY ===
+Exercise: bob
+Task: R06-T020
+Timestamp: 2026-11-19T15:46:07.880435+00:00
+Validator Exit Code: 0
+Tests Executed: 26 (Passed: 26, Failed: 0)
+Learner Stub Status: Untouched (unsolved)
+
+=== NAMED BASELINE CASES ===
+1. asking a question: PASS (Output: 'Sure.')
+2. shouting: PASS (Output: 'Whoa, chill out!')
+3. forceful question: PASS (Output: 'Calm down, I know what I'm doing!')
+
+=== VALIDATOR STDOUT ===
+Processing bob
+1..26
+ok 1 asking a question
+ok 2 shouting
+ok 3 forceful question
+ok 4 silence
+ok 5 stating something
+ok 6 asking a numeric question
+ok 7 asking gibberish
+ok 8 question with no letters
+ok 9 non-letters with question
+ok 10 prattling on
+ok 11 ending with whitespace
+ok 12 multiple line question
+ok 13 shouting gibberish
+ok 14 shouting a statement containing a question mark
+ok 15 shouting numbers
+ok 16 shouting with special characters
+ok 17 shouting with no exclamation mark
+ok 18 prolonged silence
+ok 19 alternate silence
+ok 20 other whitespace
+ok 21 talking forcefully
+ok 22 using acronyms in regular speech
+ok 23 no letters
+ok 24 statement containing question mark
+ok 25 starting with whitespace
+ok 26 non-question ending with whitespace
+

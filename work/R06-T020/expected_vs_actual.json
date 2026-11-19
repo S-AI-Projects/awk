@@ -1,0 +1,219 @@
+{
+  "exercise": "bob",
+  "task": "R06-T020",
+  "timestamp": "2026-11-19T15:46:07.880669+00:00",
+  "validator_run": {
+    "exit_code": 0,
+    "total_cases": 26,
+    "passed_cases": 26,
+    "failed_cases": 0
+  },
+  "decision_table": [
+    {
+      "category": "Silence",
+      "condition": "trim(input) == ''",
+      "response": "Fine. Be that way!"
+    },
+    {
+      "category": "Forceful Question",
+      "condition": "is_yelling && is_asking",
+      "response": "Calm down, I know what I'm doing!"
+    },
+    {
+      "category": "Shouting",
+      "condition": "is_yelling && !is_asking",
+      "response": "Whoa, chill out!"
+    },
+    {
+      "category": "Question",
+      "condition": "!is_yelling && is_asking",
+      "response": "Sure."
+    },
+    {
+      "category": "Statement / Other",
+      "condition": "default / fallback",
+      "response": "Whatever."
+    }
+  ],
+  "named_baseline_cases": [
+    {
+      "test_number": 1,
+      "description": "asking a question",
+      "input": "Does this cryogenic chamber make me look fat?",
+      "expected_output": "Sure.",
+      "status": "PASS"
+    },
+    {
+      "test_number": 2,
+      "description": "shouting",
+      "input": "WATCH OUT!",
+      "expected_output": "Whoa, chill out!",
+      "status": "PASS"
+    },
+    {
+      "test_number": 3,
+      "description": "forceful question",
+      "input": "WHAT'S GOING ON?",
+      "expected_output": "Calm down, I know what I'm doing!",
+      "status": "PASS"
+    }
+  ],
+  "cases": [
+    {
+      "test_number": 1,
+      "description": "asking a question",
+      "status": "ok",
+      "is_named_baseline_case": true
+    },
+    {
+      "test_number": 2,
+      "description": "shouting",
+      "status": "ok",
+      "is_named_baseline_case": true
+    },
+    {
+      "test_number": 3,
+      "description": "forceful question",
+      "status": "ok",
+      "is_named_baseline_case": true
+    },
+    {
+      "test_number": 4,
+      "description": "silence",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 5,
+      "description": "stating something",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 6,
+      "description": "asking a numeric question",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 7,
+      "description": "asking gibberish",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 8,
+      "description": "question with no letters",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 9,
+      "description": "non-letters with question",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 10,
+      "description": "prattling on",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 11,
+      "description": "ending with whitespace",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 12,
+      "description": "multiple line question",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 13,
+      "description": "shouting gibberish",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 14,
+      "description": "shouting a statement containing a question mark",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 15,
+      "description": "shouting numbers",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 16,
+      "description": "shouting with special characters",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 17,
+      "description": "shouting with no exclamation mark",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 18,
+      "description": "prolonged silence",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 19,
+      "description": "alternate silence",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 20,
+      "description": "other whitespace",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 21,
+      "description": "talking forcefully",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 22,
+      "description": "using acronyms in regular speech",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 23,
+      "description": "no letters",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 24,
+      "description": "statement containing question mark",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 25,
+      "description": "starting with whitespace",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 26,
+      "description": "non-question ending with whitespace",
+      "status": "ok",
+      "is_named_baseline_case": false
+    }
+  ]
+}
