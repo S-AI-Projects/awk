@@ -1,0 +1,15 @@
+Bash Version:
+GNU bash, version 5.3.15(1)-release (aarch64-apple-darwin25.4.0)
+
+AWK Version:
+GNU Awk 5.4.1, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0)
+
+Bats Version:
+Bats 1.14.0
+
+Python Version:
+Python 3.14.7
+
+jq Version:
+jq-1.7.1-apple
+

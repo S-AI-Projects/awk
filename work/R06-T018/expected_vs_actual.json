@@ -1,0 +1,85 @@
+{
+  "exercise": "diamond",
+  "task": "R06-T018",
+  "timestamp": "2026-11-19T15:24:04.271141+00:00",
+  "validator_run": {
+    "exit_code": 0,
+    "total_cases": 5,
+    "passed_cases": 5,
+    "failed_cases": 0
+  },
+  "metadata_audit": {
+    "real_config_status": "PASS",
+    "declared_files": [
+      {
+        "role": "solution",
+        "path": "diamond.awk",
+        "status": "VERIFIED"
+      },
+      {
+        "role": "test",
+        "path": "test-diamond.bats",
+        "status": "VERIFIED"
+      },
+      {
+        "role": "example",
+        "path": ".meta/example.awk",
+        "status": "VERIFIED"
+      }
+    ],
+    "fixtures": {
+      "fixture_1_missing_reference": "FAILED_AS_EXPECTED (FileNotFoundError)",
+      "fixture_2_missing_test": "FAILED_AS_EXPECTED (FileNotFoundError)",
+      "fixture_3_outside_exercise": "FAILED_AS_EXPECTED (ValueError - Path Traversal)"
+    }
+  },
+  "named_baseline_cases": [
+    {
+      "test_number": 1,
+      "description": "Degenerate case with a single 'A' row",
+      "status": "PASS"
+    },
+    {
+      "test_number": 2,
+      "description": "Degenerate case with no row containing 3 distinct groups of spaces",
+      "status": "PASS"
+    },
+    {
+      "test_number": 3,
+      "description": "Smallest non-degenerate case with odd diamond side length",
+      "status": "PASS"
+    }
+  ],
+  "cases": [
+    {
+      "test_number": 1,
+      "description": "Degenerate case with a single 'A' row",
+      "status": "ok",
+      "is_named_baseline_case": true
+    },
+    {
+      "test_number": 2,
+      "description": "Degenerate case with no row containing 3 distinct groups of spaces",
+      "status": "ok",
+      "is_named_baseline_case": true
+    },
+    {
+      "test_number": 3,
+      "description": "Smallest non-degenerate case with odd diamond side length",
+      "status": "ok",
+      "is_named_baseline_case": true
+    },
+    {
+      "test_number": 4,
+      "description": "Smallest non-degenerate case with even diamond side length",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 5,
+      "description": "Largest possible diamond",
+      "status": "ok",
+      "is_named_baseline_case": false
+    }
+  ]
+}
