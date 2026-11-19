@@ -1,0 +1,219 @@
+{
+  "exercise": "roman-numerals",
+  "task": "R06-T017",
+  "timestamp": "2026-11-19T15:17:33.740782+00:00",
+  "validator_run": {
+    "exit_code": 0,
+    "total_cases": 27,
+    "passed_cases": 27,
+    "failed_cases": 0
+  },
+  "language_construct_guidance": {
+    "construct": "PROCINFO[\"sorted_in\"] = \"@val_num_desc\"",
+    "purpose": "Control associative array traversal order for numerical descending iteration",
+    "documentation_link": "https://www.gnu.org/software/gawk/manual/html_node/Controlling-Scanning.html",
+    "micro_examples": {
+      "construct": {
+        "sorting_mode": "@val_num_desc",
+        "snippet": "BEGIN {\n        vals[\"X\"] = 10; vals[\"V\"] = 5; vals[\"I\"] = 1\n        PROCINFO[\"sorted_in\"] = \"@val_num_desc\"\n        for (k in vals) printf \"%s:%d \", k, vals[k]\n        print \"\"\n    }",
+        "expected_output": "X:10 V:5 I:1",
+        "actual_output": "X:10 V:5 I:1",
+        "status": "VERIFIED"
+      },
+      "pitfall": {
+        "sorting_mode": "@val_str_desc",
+        "snippet": "BEGIN {\n        vals[\"X\"] = 10; vals[\"V\"] = 5; vals[\"I\"] = 1\n        PROCINFO[\"sorted_in\"] = \"@val_str_desc\"\n        for (k in vals) printf \"%s:%d \", k, vals[k]\n        print \"\"\n    }",
+        "expected_output": "V:5 X:10 I:1",
+        "actual_output": "V:5 X:10 I:1",
+        "status": "VERIFIED"
+      }
+    }
+  },
+  "named_baseline_cases": [
+    {
+      "test_number": 1,
+      "description": "1 is I",
+      "input": "1",
+      "expected_output": "I",
+      "status": "PASS"
+    },
+    {
+      "test_number": 2,
+      "description": "2 is II",
+      "input": "2",
+      "expected_output": "II",
+      "status": "PASS"
+    },
+    {
+      "test_number": 3,
+      "description": "3 is III",
+      "input": "3",
+      "expected_output": "III",
+      "status": "PASS"
+    }
+  ],
+  "cases": [
+    {
+      "test_number": 1,
+      "description": "1 is I",
+      "status": "ok",
+      "is_named_baseline_case": true
+    },
+    {
+      "test_number": 2,
+      "description": "2 is II",
+      "status": "ok",
+      "is_named_baseline_case": true
+    },
+    {
+      "test_number": 3,
+      "description": "3 is III",
+      "status": "ok",
+      "is_named_baseline_case": true
+    },
+    {
+      "test_number": 4,
+      "description": "4 is IV",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 5,
+      "description": "5 is V",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 6,
+      "description": "6 is VI",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 7,
+      "description": "9 is IX",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 8,
+      "description": "16 is XVI",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 9,
+      "description": "27 is XXVII",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 10,
+      "description": "48 is XLVIII",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 11,
+      "description": "49 is XLIX",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 12,
+      "description": "59 is LIX",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 13,
+      "description": "66 is LXVI",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 14,
+      "description": "93 is XCIII",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 15,
+      "description": "141 is CXLI",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 16,
+      "description": "163 is CLXIII",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 17,
+      "description": "166 is CLXVI",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 18,
+      "description": "402 is CDII",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 19,
+      "description": "575 is DLXXV",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 20,
+      "description": "666 is DCLXVI",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 21,
+      "description": "911 is CMXI",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 22,
+      "description": "1024 is MXXIV",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 23,
+      "description": "1666 is MDCLXVI",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 24,
+      "description": "3000 is MMM",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 25,
+      "description": "3001 is MMMI",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 26,
+      "description": "3888 is MMMDCCCLXXXVIII",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 27,
+      "description": "3999 is MMMCMXCIX",
+      "status": "ok",
+      "is_named_baseline_case": false
+    }
+  ]
+}

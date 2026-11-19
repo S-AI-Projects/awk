@@ -1,0 +1,51 @@
+=== EXECUTION SUMMARY ===
+Exercise: roman-numerals
+Task: R06-T017
+Timestamp: 2026-11-19T15:17:33.740559+00:00
+Validator Exit Code: 0
+Tests Executed: 27 (Passed: 27, Failed: 0)
+Learner Stub Status: Untouched (unsolved)
+
+=== NAMED BASELINE CASES ===
+1. 1 is I: PASS (Input: 1 -> Output: I)
+2. 2 is II: PASS (Input: 2 -> Output: II)
+3. 3 is III: PASS (Input: 3 -> Output: III)
+
+=== MICRO-EXAMPLES VERIFICATION ===
+Micro-Example 1 (Construct: PROCINFO['sorted_in'] = '@val_num_desc'):
+  Output: 'X:10 V:5 I:1' (Matches expected: 'X:10 V:5 I:1')
+
+Micro-Example 2 (Pitfall: PROCINFO['sorted_in'] = '@val_str_desc'):
+  Output: 'V:5 X:10 I:1' (Matches expected: 'V:5 X:10 I:1')
+
+=== VALIDATOR STDOUT ===
+Processing roman-numerals
+1..27
+ok 1 1 is I
+ok 2 2 is II
+ok 3 3 is III
+ok 4 4 is IV
+ok 5 5 is V
+ok 6 6 is VI
+ok 7 9 is IX
+ok 8 16 is XVI
+ok 9 27 is XXVII
+ok 10 48 is XLVIII
+ok 11 49 is XLIX
+ok 12 59 is LIX
+ok 13 66 is LXVI
+ok 14 93 is XCIII
+ok 15 141 is CXLI
+ok 16 163 is CLXIII
+ok 17 166 is CLXVI
+ok 18 402 is CDII
+ok 19 575 is DLXXV
+ok 20 666 is DCLXVI
+ok 21 911 is CMXI
+ok 22 1024 is MXXIV
+ok 23 1666 is MDCLXVI
+ok 24 3000 is MMM
+ok 25 3001 is MMMI
+ok 26 3888 is MMMDCCCLXXXVIII
+ok 27 3999 is MMMCMXCIX
+
