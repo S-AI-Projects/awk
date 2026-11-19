@@ -1,0 +1,117 @@
+{
+  "exercise": "prime-factors",
+  "task": "R06-T019",
+  "timestamp": "2026-11-19T15:40:23.473281+00:00",
+  "validator_run": {
+    "exit_code": 0,
+    "total_cases": 12,
+    "passed_cases": 12,
+    "failed_cases": 0
+  },
+  "isolation_audit": {
+    "learner_stub_sha256": "f24fb8f97ca628345685ef6e78f349d5cfe86bee162f48c84ce2842abed28552",
+    "hash_verified_identical": true,
+    "modes_tested": {
+      "standard": "PASS (rc=0, 12 passed)",
+      "failing_reference": "PASS (non-zero rc, failure detected)",
+      "empty_tests": "PASS (zero-test run rejected)"
+    }
+  },
+  "named_baseline_cases": [
+    {
+      "test_number": 1,
+      "description": "no factors",
+      "input": "1",
+      "expected_output": "",
+      "status": "PASS"
+    },
+    {
+      "test_number": 2,
+      "description": "prime number",
+      "input": "2",
+      "expected_output": "2",
+      "status": "PASS"
+    },
+    {
+      "test_number": 3,
+      "description": "another prime number",
+      "input": "3",
+      "expected_output": "3",
+      "status": "PASS"
+    }
+  ],
+  "cases": [
+    {
+      "test_number": 1,
+      "description": "no factors",
+      "status": "ok",
+      "is_named_baseline_case": true
+    },
+    {
+      "test_number": 2,
+      "description": "prime number",
+      "status": "ok",
+      "is_named_baseline_case": true
+    },
+    {
+      "test_number": 3,
+      "description": "another prime number",
+      "status": "ok",
+      "is_named_baseline_case": true
+    },
+    {
+      "test_number": 4,
+      "description": "square of a prime",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 5,
+      "description": "product of first prime",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 6,
+      "description": "cube of a prime",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 7,
+      "description": "product of second prime",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 8,
+      "description": "product of third prime",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 9,
+      "description": "product of first and second prime",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 10,
+      "description": "product of primes and non-primes",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 11,
+      "description": "product of primes",
+      "status": "ok",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 12,
+      "description": "factors include a large prime",
+      "status": "ok",
+      "is_named_baseline_case": false
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+=== ISOLATED RUNNER VERIFICATION ===
+Learner Stub SHA256 (Untouched): f24fb8f97ca628345685ef6e78f349d5cfe86bee162f48c84ce2842abed28552
+
+1. Standard Mode:          PASS (rc=0, passed=12, failed=0)
+2. Failing Reference Mode: PASS (rc=1, failures detected as expected)
+3. Empty Tests Mode:       PASS (rejected zero-test run as expected)
+
+Integrity: All working tree learner files preserved with identical cryptographic hashes.

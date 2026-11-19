@@ -1,0 +1,35 @@
+=== EXECUTION SUMMARY ===
+Exercise: prime-factors
+Task: R06-T019
+Timestamp: 2026-11-19T15:40:23.472994+00:00
+Validator Exit Code: 0
+Tests Executed: 12 (Passed: 12, Failed: 0)
+Learner Stub SHA256 (Untouched): f24fb8f97ca628345685ef6e78f349d5cfe86bee162f48c84ce2842abed28552
+
+=== NAMED BASELINE CASES ===
+1. no factors: PASS (Input: 1 -> Output: '')
+2. prime number: PASS (Input: 2 -> Output: '2')
+3. another prime number: PASS (Input: 3 -> Output: '3')
+
+=== ISOLATION MODE AUDIT ===
+Standard Mode: PASS (all 12 tests passed, rc=0)
+Failing Reference Mode: PASS (cleanly failed with non-zero exit code as expected)
+Empty Tests Mode: PASS (zero-test run rejected as expected)
+Cryptographic Hash Check: PASS (identical before and after all runs)
+
+=== VALIDATOR STDOUT ===
+Processing prime-factors
+1..12
+ok 1 no factors
+ok 2 prime number
+ok 3 another prime number
+ok 4 square of a prime
+ok 5 product of first prime
+ok 6 cube of a prime
+ok 7 product of second prime
+ok 8 product of third prime
+ok 9 product of first and second prime
+ok 10 product of primes and non-primes
+ok 11 product of primes
+ok 12 factors include a large prime
+
