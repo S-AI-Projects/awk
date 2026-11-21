@@ -11,12 +11,15 @@
 
 [35c9db2e-f781-4c52-b73b-8e76427defd0]
 description = "Encode a series of integers, producing a series of bytes. -> zero"
+comment = "Zero is in the specified 0–127 one-byte range; the encoder's do/while emits a terminal byte even when the shifted value is already zero."
 
 [be44d299-a151-4604-a10e-d4b867f41540]
 description = "Encode a series of integers, producing a series of bytes. -> arbitrary single byte"
+comment = "0x40 exercises a non-boundary value in the one-byte range and verifies that the encoder preserves its seven payload bits with the continuation bit clear."
 
 [890bc344-cb80-45af-b316-6806a6971e81]
 description = "Encode a series of integers, producing a series of bytes. -> asymmetric single byte"
+comment = "0x53 has unequal nibbles, so this case catches accidental nibble reversal while checking the one-byte encode path."
 
 [ea399615-d274-4af6-bbef-a1c23c9e1346]
 description = "Encode a series of integers, producing a series of bytes. -> largest single byte"

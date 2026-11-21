@@ -1,0 +1,42 @@
+Before: included=31; excluded=0
+After: included=31; excluded=0
+Executed Bats cases: 32
+Tool versions:
+3.14.6 (v3.14.6:c63aec69bd5, Jun 10 2026, 08:07:54) [Clang 21.0.0 (clang-2100.1.1.101)]
+GNU Awk 5.4.2, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0)
+Bats 1.14.0
+
+Processing variable-length-quantity
+1..32
+ok 1 encode zero
+ok 2 encode arbitrary single byte
+ok 3 encode asymmetric single byte
+ok 4 encode largest single byte
+ok 5 encode smallest double byte
+ok 6 encode arbitrary double byte
+ok 7 encode asymmetric double byte
+ok 8 encode largest double byte
+ok 9 encode smallest triple byte
+ok 10 encode arbitrary triple byte
+ok 11 encode asymmetric triple byte
+ok 12 encode largest triple byte
+ok 13 encode smallest quadruple byte
+ok 14 encode arbitrary quadruple byte
+ok 15 encode asymmetric quadruple byte
+ok 16 encode largest quadruple byte
+ok 17 encode smallest quintuple byte
+ok 18 encode arbitrary quintuple byte
+ok 19 encode asymmetric quintuple byte
+ok 20 encode maximum 32-bit integer input
+ok 21 encode two single-byte values
+ok 22 encode two multi-byte values
+ok 23 encode many multi-byte values
+ok 24 decode one byte
+ok 25 decode two bytes
+ok 26 decode three bytes
+ok 27 decode four bytes
+ok 28 decode maximum 32-bit integer
+ok 29 decode multiple values
+ok 30 decode incomplete sequence causes error
+ok 31 decode incomplete sequence causes error, even if value is zero
+ok 32 invalid subcommand
