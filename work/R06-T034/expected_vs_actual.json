@@ -1,0 +1,96 @@
+{
+  "exercise": "alphametics",
+  "task": "R06-T034",
+  "timestamp": "2026-11-21T07:05:36.420172+00:00",
+  "validator_run": {
+    "exit_code": 0,
+    "total_cases": 10,
+    "passed_cases": 10,
+    "failed_cases": 0
+  },
+  "named_baseline_cases": [
+    {
+      "test_number": 1,
+      "description": "puzzle with three letters",
+      "input_puzzle": "I + BB == ILL",
+      "expected_output": "B=9 I=1 L=0",
+      "status": "PASS"
+    },
+    {
+      "test_number": 2,
+      "description": "solution must have unique value for each letter",
+      "input_puzzle": "A == B",
+      "expected_output": "(refuted / no output)",
+      "status": "PASS"
+    },
+    {
+      "test_number": 3,
+      "description": "leading zero solution is invalid",
+      "input_puzzle": "ACA + DD == BD",
+      "expected_output": "(refuted / no output)",
+      "status": "PASS"
+    }
+  ],
+  "cases": [
+    {
+      "test_number": 1,
+      "description": "puzzle with three letters",
+      "status": "PASS",
+      "is_named_baseline_case": true
+    },
+    {
+      "test_number": 2,
+      "description": "solution must have unique value for each letter",
+      "status": "PASS",
+      "is_named_baseline_case": true
+    },
+    {
+      "test_number": 3,
+      "description": "leading zero solution is invalid",
+      "status": "PASS",
+      "is_named_baseline_case": true
+    },
+    {
+      "test_number": 4,
+      "description": "puzzle with two digits final carry",
+      "status": "PASS",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 5,
+      "description": "puzzle with four letters",
+      "status": "PASS",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 6,
+      "description": "puzzle with six letters",
+      "status": "PASS",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 7,
+      "description": "puzzle with seven letters",
+      "status": "PASS",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 8,
+      "description": "puzzle with eight letters",
+      "status": "PASS",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 9,
+      "description": "puzzle with ten letters",
+      "status": "PASS",
+      "is_named_baseline_case": false
+    },
+    {
+      "test_number": 10,
+      "description": "puzzle with ten letters and 199 addends",
+      "status": "PASS",
+      "is_named_baseline_case": false
+    }
+  ]
+}

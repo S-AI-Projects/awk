@@ -1,0 +1,50 @@
+{
+  "exercise": "alphametics",
+  "task": "R06-T034",
+  "timestamp": "2026-11-21T07:05:36.419885+00:00",
+  "tool_versions": {
+    "Bash Version": "GNU bash, version 5.3.20(1)-release (aarch64-apple-darwin27.0.0)",
+    "AWK Version": "GNU Awk 5.4.2, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0)",
+    "Bats Version": "Bats 1.14.0",
+    "Python Version": "Python 3.9.6",
+    "jq Version": "jq-1.7.1-apple"
+  },
+  "readability_improvement": {
+    "target_function": "colchar(word, col)",
+    "renamed_variables": [
+      {
+        "old": "L",
+        "new": "word_len",
+        "reason": "Self-documenting word length instead of terse single letter"
+      },
+      {
+        "extracted": "char_pos = word_len - col",
+        "reason": "Explicit 1-based character position calculated from rightmost units column"
+      }
+    ],
+    "documented_invariant": "Returns character at 1-based char_pos if col < word_len, else empty string",
+    "baseline_cases": [
+      {
+        "test_number": 1,
+        "description": "puzzle with three letters",
+        "input_puzzle": "I + BB == ILL",
+        "expected_output": "B=9 I=1 L=0",
+        "status": "PASS"
+      },
+      {
+        "test_number": 2,
+        "description": "solution must have unique value for each letter",
+        "input_puzzle": "A == B",
+        "expected_output": "(refuted / no output)",
+        "status": "PASS"
+      },
+      {
+        "test_number": 3,
+        "description": "leading zero solution is invalid",
+        "input_puzzle": "ACA + DD == BD",
+        "expected_output": "(refuted / no output)",
+        "status": "PASS"
+      }
+    ]
+  }
+}

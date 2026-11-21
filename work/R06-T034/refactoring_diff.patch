@@ -1,0 +1,17 @@
+--- example.awk (original colchar)
++++ example.awk (refactored colchar)
+@@ -1,5 +1,11 @@
+-function colchar(word, col,    L) {
+-    L = length(word)
+-    if (col < L) return substr(word, L - col, 1)
++# Extracts the character from word at column index col,
++# counting from col = 0 at the rightmost (units) digit.
++# Returns "" if col exceeds the length of the word.
++function colchar(word, col,    word_len, char_pos) {
++    word_len = length(word)
++    if (col < word_len) {
++        char_pos = word_len - col
++        return substr(word, char_pos, 1)
++    }
+     return ""
+ }

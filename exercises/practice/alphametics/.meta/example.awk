@@ -16,11 +16,19 @@
 # assigned digits (via backtracking), then the column's arithmetic
 # is checked immediately. This prunes the search far more
 # aggressively than trying full permutations of every letter.
-function colchar(word, col,    L) {
-    L = length(word)
-    if (col < L) return substr(word, L - col, 1)
+
+# Extracts the character from word at column index col,
+# counting from col = 0 at the rightmost (units) digit.
+# Returns "" if col exceeds the length of the word.
+function colchar(word, col,    word_len, char_pos) {
+    word_len = length(word)
+    if (col < word_len) {
+        char_pos = word_len - col
+        return substr(word, char_pos, 1)
+    }
     return ""
 }
+
 # Try every valid digit for newl[idx..m], then verify/recurse.
 function assign(idx, m, colletters, ncol, hasres, rch, newl, col, carr,
                  d, letter, i, colsum, total, digit_needed, newcarry, required) {
@@ -46,6 +54,7 @@ function assign(idx, m, colletters, ncol, hasres, rch, newl, col, carr,
     }
     return 0
 }
+
 function solve(col, carry,
                 colletters, ncol, i, ch, hasres, rch, newl, m, j, exists) {
     if (col == maxlen) return (carry == 0)
@@ -72,18 +81,19 @@ function solve(col, carry,
     }
     return assign(1, m, colletters, ncol, hasres, rch, newl, col, carry)
 }
+
 {
     line = $0
-    split(line, parts, /\s*==\s*/)
+    split(line, parts, /[[:space:]]*==[[:space:]]*/)
     lhs = parts[1]
     result = parts[2]
-    nwords = split(lhs, addends, /\s*\+\s*/)
+    nwords = split(lhs, addends, /[[:space:]]*\+[[:space:]]*/)
     maxlen = length(result)
     if (length(result) > 1) leading[substr(result, 1, 1)] = 1
     for (i = 1; i <= nwords; i++) {
-        L = length(addends[i])
-        if (L > maxlen) maxlen = L
-        if (L > 1) leading[substr(addends[i], 1, 1)] = 1
+        word_len = length(addends[i])
+        if (word_len > maxlen) maxlen = word_len
+        if (word_len > 1) leading[substr(addends[i], 1, 1)] = 1
     }
     if (solve(0, 0)) {
         n = 0

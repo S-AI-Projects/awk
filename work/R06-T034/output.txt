@@ -1,0 +1,33 @@
+=== EXECUTION SUMMARY ===
+Exercise: alphametics
+Task: R06-T034
+Timestamp: 2026-11-21T07:05:36.420297+00:00
+Validator Exit Code: 0
+Tests Executed: 10 (Passed: 10, Failed: 0)
+Learner Stub Status: Untouched (unsolved)
+
+=== NAMED BASELINE CASES ===
+1. puzzle with three letters: PASS (Output: 'B=9 I=1 L=0')
+2. solution must have unique value for each letter: PASS (Refuted / no output)
+3. leading zero solution is invalid: PASS (Refuted / no output)
+
+=== READABILITY IMPROVEMENTS ===
+- Target function: colchar(word, col)
+- Renamed ambiguous variable 'L' to 'word_len'
+- Extracted calculation 'char_pos = word_len - col'
+- Replaced GNU regex '\s' with POSIX '[[:space:]]'
+
+=== VALIDATOR STDOUT ===
+Processing alphametics
+1..10
+ok 1 puzzle with three letters
+ok 2 solution must have unique value for each letter
+ok 3 leading zero solution is invalid
+ok 4 puzzle with two digits final carry
+ok 5 puzzle with four letters
+ok 6 puzzle with six letters
+ok 7 puzzle with seven letters
+ok 8 puzzle with eight letters
+ok 9 puzzle with ten letters
+ok 10 puzzle with ten letters and 199 addends
+
