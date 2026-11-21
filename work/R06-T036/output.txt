@@ -1,0 +1,35 @@
+=== Reference TAP Output ===
+Processing acronym
+1..9
+ok 1 basic
+ok 2 lowercase words
+ok 3 punctuation
+ok 4 all caps word
+ok 5 punctuation without whitespace
+ok 6 very long abbreviation
+ok 7 consecutive delimiters
+ok 8 apostrophes
+ok 9 underscore emphasis
+
+=== Alternative TAP Output ===
+1..9
+ok 1 basic
+ok 2 lowercase words
+ok 3 punctuation
+ok 4 all caps word
+ok 5 punctuation without whitespace
+ok 6 very long abbreviation
+ok 7 consecutive delimiters
+ok 8 apostrophes
+ok 9 underscore emphasis
+
+=== Case Agreement & Performance ===
+basic: expected='PNG', ref='PNG', alt='PNG', ref_time=5.3767ms, alt_time=5.5362ms
+lowercase words: expected='ROR', ref='ROR', alt='ROR', ref_time=5.3165ms, alt_time=5.4389ms
+punctuation: expected='FIFO', ref='FIFO', alt='FIFO', ref_time=5.2091ms, alt_time=5.3577ms
+all caps word: expected='GIMP', ref='GIMP', alt='GIMP', ref_time=5.2752ms, alt_time=5.3201ms
+punctuation without whitespace: expected='CMOS', ref='CMOS', alt='CMOS', ref_time=5.3257ms, alt_time=5.2877ms
+very long abbreviation: expected='ROTFLSHTMDCOALM', ref='ROTFLSHTMDCOALM', alt='ROTFLSHTMDCOALM', ref_time=5.2536ms, alt_time=5.2433ms
+consecutive delimiters: expected='SIMUFTA', ref='SIMUFTA', alt='SIMUFTA', ref_time=5.3115ms, alt_time=5.3031ms
+apostrophes: expected='HC', ref='HC', alt='HC', ref_time=5.2163ms, alt_time=5.3587ms
+underscore emphasis: expected='TRNT', ref='TRNT', alt='TRNT', ref_time=5.3027ms, alt_time=5.4045ms

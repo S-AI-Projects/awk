@@ -1,0 +1,74 @@
+[
+  {
+    "id": "basic",
+    "name": "basic",
+    "expected": "PNG",
+    "ref_actual": "PNG",
+    "alt_actual": "PNG",
+    "match": true
+  },
+  {
+    "id": "lowercase_words",
+    "name": "lowercase words",
+    "expected": "ROR",
+    "ref_actual": "ROR",
+    "alt_actual": "ROR",
+    "match": true
+  },
+  {
+    "id": "punctuation",
+    "name": "punctuation",
+    "expected": "FIFO",
+    "ref_actual": "FIFO",
+    "alt_actual": "FIFO",
+    "match": true
+  },
+  {
+    "id": "all_caps_word",
+    "name": "all caps word",
+    "expected": "GIMP",
+    "ref_actual": "GIMP",
+    "alt_actual": "GIMP",
+    "match": true
+  },
+  {
+    "id": "punctuation_without_whitespace",
+    "name": "punctuation without whitespace",
+    "expected": "CMOS",
+    "ref_actual": "CMOS",
+    "alt_actual": "CMOS",
+    "match": true
+  },
+  {
+    "id": "very_long_abbreviation",
+    "name": "very long abbreviation",
+    "expected": "ROTFLSHTMDCOALM",
+    "ref_actual": "ROTFLSHTMDCOALM",
+    "alt_actual": "ROTFLSHTMDCOALM",
+    "match": true
+  },
+  {
+    "id": "consecutive_delimiters",
+    "name": "consecutive delimiters",
+    "expected": "SIMUFTA",
+    "ref_actual": "SIMUFTA",
+    "alt_actual": "SIMUFTA",
+    "match": true
+  },
+  {
+    "id": "apostrophes",
+    "name": "apostrophes",
+    "expected": "HC",
+    "ref_actual": "HC",
+    "alt_actual": "HC",
+    "match": true
+  },
+  {
+    "id": "underscore_emphasis",
+    "name": "underscore emphasis",
+    "expected": "TRNT",
+    "ref_actual": "TRNT",
+    "alt_actual": "TRNT",
+    "match": true
+  }
+]

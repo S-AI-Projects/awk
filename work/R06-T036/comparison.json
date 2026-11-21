@@ -1,0 +1,109 @@
+{
+  "summary": {
+    "total_cases": 9,
+    "matching_cases": 9,
+    "technique_1": "Delimiter splitting via FS + in-place field gsub sanitization",
+    "technique_2": "Token matching via FPAT word extraction"
+  },
+  "cases": [
+    {
+      "id": "basic",
+      "name": "basic",
+      "input": "Portable Network Graphics",
+      "expected": "PNG",
+      "ref_actual": "PNG",
+      "alt_actual": "PNG",
+      "match": true,
+      "ref_median_ms": 5.3767,
+      "alt_median_ms": 5.5362
+    },
+    {
+      "id": "lowercase_words",
+      "name": "lowercase words",
+      "input": "Ruby on Rails",
+      "expected": "ROR",
+      "ref_actual": "ROR",
+      "alt_actual": "ROR",
+      "match": true,
+      "ref_median_ms": 5.3165,
+      "alt_median_ms": 5.4389
+    },
+    {
+      "id": "punctuation",
+      "name": "punctuation",
+      "input": "First In, First Out",
+      "expected": "FIFO",
+      "ref_actual": "FIFO",
+      "alt_actual": "FIFO",
+      "match": true,
+      "ref_median_ms": 5.2091,
+      "alt_median_ms": 5.3577
+    },
+    {
+      "id": "all_caps_word",
+      "name": "all caps word",
+      "input": "GNU Image Manipulation Program",
+      "expected": "GIMP",
+      "ref_actual": "GIMP",
+      "alt_actual": "GIMP",
+      "match": true,
+      "ref_median_ms": 5.2752,
+      "alt_median_ms": 5.3201
+    },
+    {
+      "id": "punctuation_without_whitespace",
+      "name": "punctuation without whitespace",
+      "input": "Complementary metal-oxide semiconductor",
+      "expected": "CMOS",
+      "ref_actual": "CMOS",
+      "alt_actual": "CMOS",
+      "match": true,
+      "ref_median_ms": 5.3257,
+      "alt_median_ms": 5.2877
+    },
+    {
+      "id": "very_long_abbreviation",
+      "name": "very long abbreviation",
+      "input": "Rolling On The Floor Laughing So Hard That My Dogs Came Over And Licked Me",
+      "expected": "ROTFLSHTMDCOALM",
+      "ref_actual": "ROTFLSHTMDCOALM",
+      "alt_actual": "ROTFLSHTMDCOALM",
+      "match": true,
+      "ref_median_ms": 5.2536,
+      "alt_median_ms": 5.2433
+    },
+    {
+      "id": "consecutive_delimiters",
+      "name": "consecutive delimiters",
+      "input": "Something - I made up from thin air",
+      "expected": "SIMUFTA",
+      "ref_actual": "SIMUFTA",
+      "alt_actual": "SIMUFTA",
+      "match": true,
+      "ref_median_ms": 5.3115,
+      "alt_median_ms": 5.3031
+    },
+    {
+      "id": "apostrophes",
+      "name": "apostrophes",
+      "input": "Halley's Comet",
+      "expected": "HC",
+      "ref_actual": "HC",
+      "alt_actual": "HC",
+      "match": true,
+      "ref_median_ms": 5.2163,
+      "alt_median_ms": 5.3587
+    },
+    {
+      "id": "underscore_emphasis",
+      "name": "underscore emphasis",
+      "input": "The Road _Not_ Taken",
+      "expected": "TRNT",
+      "ref_actual": "TRNT",
+      "alt_actual": "TRNT",
+      "match": true,
+      "ref_median_ms": 5.3027,
+      "alt_median_ms": 5.4045
+    }
+  ]
+}

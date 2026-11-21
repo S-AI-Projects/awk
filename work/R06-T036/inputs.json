@@ -1,0 +1,47 @@
+[
+  {
+    "id": "basic",
+    "name": "basic",
+    "input": "Portable Network Graphics"
+  },
+  {
+    "id": "lowercase_words",
+    "name": "lowercase words",
+    "input": "Ruby on Rails"
+  },
+  {
+    "id": "punctuation",
+    "name": "punctuation",
+    "input": "First In, First Out"
+  },
+  {
+    "id": "all_caps_word",
+    "name": "all caps word",
+    "input": "GNU Image Manipulation Program"
+  },
+  {
+    "id": "punctuation_without_whitespace",
+    "name": "punctuation without whitespace",
+    "input": "Complementary metal-oxide semiconductor"
+  },
+  {
+    "id": "very_long_abbreviation",
+    "name": "very long abbreviation",
+    "input": "Rolling On The Floor Laughing So Hard That My Dogs Came Over And Licked Me"
+  },
+  {
+    "id": "consecutive_delimiters",
+    "name": "consecutive delimiters",
+    "input": "Something - I made up from thin air"
+  },
+  {
+    "id": "apostrophes",
+    "name": "apostrophes",
+    "input": "Halley's Comet"
+  },
+  {
+    "id": "underscore_emphasis",
+    "name": "underscore emphasis",
+    "input": "The Road _Not_ Taken"
+  }
+]
