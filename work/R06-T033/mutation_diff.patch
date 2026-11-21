@@ -1,0 +1,11 @@
+--- example.awk (original)
++++ example.awk (mutant)
+@@ -27,7 +27,7 @@
+     print exclamations[critters[i]]
+     if (critters[i] == "horse") return
+     if (critters[i] != "fly") {
+-        for (j = i - 1; j >= 1; j--) {
++        for (j = i - 1; j > 1; j--) {
+             printf "She swallowed the %s to catch the %s", critters[j + 1], critters[j]
+             if (critters[j] == "spider")
+                 printf " that wriggled and jiggled and tickled inside her"

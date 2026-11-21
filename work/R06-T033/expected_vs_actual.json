@@ -1,0 +1,46 @@
+{
+  "exercise": "food-chain",
+  "task": "R06-T033",
+  "timestamp": "2026-11-21T06:53:00.067387+00:00",
+  "original_run": {
+    "exit_code": 0,
+    "total_cases": 10,
+    "passed": 10,
+    "failed": 0,
+    "status": "ALL_PASSED"
+  },
+  "mutant_run": {
+    "exit_code": 1,
+    "total_cases": 10,
+    "passed": 2,
+    "failed": 8,
+    "status": "MUTANT_KILLED"
+  },
+  "smallest_rejecting_case": {
+    "test_case": "spider",
+    "input_variables": {
+      "start": 2,
+      "end": 2
+    },
+    "expected_output": "I know an old lady who swallowed a spider.\nIt wriggled and jiggled and tickled inside her.\nShe swallowed the spider to catch the fly.\nI don't know why she swallowed the fly. Perhaps she'll die.",
+    "mutated_output": "I know an old lady who swallowed a spider.\nIt wriggled and jiggled and tickled inside her.\nI don't know why she swallowed the fly. Perhaps she'll die.",
+    "mutation_detection": "assert_output failed due to missing line: 'She swallowed the spider to catch the fly.'"
+  },
+  "named_cases_summary": [
+    {
+      "case": "fly",
+      "original_status": "PASS",
+      "mutant_status": "PASS"
+    },
+    {
+      "case": "spider",
+      "original_status": "PASS",
+      "mutant_status": "FAIL (Smallest Rejecting Case)"
+    },
+    {
+      "case": "bird",
+      "original_status": "PASS",
+      "mutant_status": "FAIL"
+    }
+  ]
+}

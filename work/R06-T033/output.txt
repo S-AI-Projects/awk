@@ -1,0 +1,306 @@
+=== EXECUTION SUMMARY ===
+Exercise: food-chain
+Task: R06-T033
+Timestamp: 2026-11-21T06:53:00.067509+00:00
+Original Validator Exit Code: 0 (Passed: 10, Failed: 0)
+Mutated Validator Exit Code: 1 (Passed: 2, Failed: 8)
+Learner Stub Status: Untouched (unsolved)
+
+=== MUTATION VERIFICATION ===
+Original: 'for (j = i - 1; j >= 1; j--)'
+Mutant:   'for (j = i - 1; j > 1; j--)'
+Smallest Rejecting Case: 'spider' (start=2, end=2)
+- fly (start=1, end=1):       Original=PASS, Mutant=PASS
+- spider (start=2, end=2):    Original=PASS, Mutant=FAIL (Killed)
+- bird (start=3, end=3):      Original=PASS, Mutant=FAIL (Killed)
+
+=== ORIGINAL VALIDATOR STDOUT ===
+Processing food-chain
+1..10
+ok 1 fly
+ok 2 spider
+ok 3 bird
+ok 4 cat
+ok 5 dog
+ok 6 goat
+ok 7 cow
+ok 8 horse
+ok 9 multiple verses
+ok 10 full song
+
+=== MUTATED VALIDATOR STDOUT ===
+Processing food-chain
+1..10
+ok 1 fly
+not ok 2 spider
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-food-chain.bats, line 29)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected (4 lines):
+#   I know an old lady who swallowed a spider.
+#   It wriggled and jiggled and tickled inside her.
+#   She swallowed the spider to catch the fly.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+# actual (3 lines):
+#   I know an old lady who swallowed a spider.
+#   It wriggled and jiggled and tickled inside her.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+# --
+#
+not ok 3 bird
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-food-chain.bats, line 44)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected (5 lines):
+#   I know an old lady who swallowed a bird.
+#   How absurd to swallow a bird!
+#   She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+#   She swallowed the spider to catch the fly.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+# actual (4 lines):
+#   I know an old lady who swallowed a bird.
+#   How absurd to swallow a bird!
+#   She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+# --
+#
+not ok 4 cat
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-food-chain.bats, line 60)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected (6 lines):
+#   I know an old lady who swallowed a cat.
+#   Imagine that, to swallow a cat!
+#   She swallowed the cat to catch the bird.
+#   She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+#   She swallowed the spider to catch the fly.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+# actual (5 lines):
+#   I know an old lady who swallowed a cat.
+#   Imagine that, to swallow a cat!
+#   She swallowed the cat to catch the bird.
+#   She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+# --
+#
+not ok 5 dog
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-food-chain.bats, line 77)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected (7 lines):
+#   I know an old lady who swallowed a dog.
+#   What a hog, to swallow a dog!
+#   She swallowed the dog to catch the cat.
+#   She swallowed the cat to catch the bird.
+#   She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+#   She swallowed the spider to catch the fly.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+# actual (6 lines):
+#   I know an old lady who swallowed a dog.
+#   What a hog, to swallow a dog!
+#   She swallowed the dog to catch the cat.
+#   She swallowed the cat to catch the bird.
+#   She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+# --
+#
+not ok 6 goat
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-food-chain.bats, line 95)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected (8 lines):
+#   I know an old lady who swallowed a goat.
+#   Just opened her throat and swallowed a goat!
+#   She swallowed the goat to catch the dog.
+#   She swallowed the dog to catch the cat.
+#   She swallowed the cat to catch the bird.
+#   She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+#   She swallowed the spider to catch the fly.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+# actual (7 lines):
+#   I know an old lady who swallowed a goat.
+#   Just opened her throat and swallowed a goat!
+#   She swallowed the goat to catch the dog.
+#   She swallowed the dog to catch the cat.
+#   She swallowed the cat to catch the bird.
+#   She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+# --
+#
+not ok 7 cow
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-food-chain.bats, line 114)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected (9 lines):
+#   I know an old lady who swallowed a cow.
+#   I don't know how she swallowed a cow!
+#   She swallowed the cow to catch the goat.
+#   She swallowed the goat to catch the dog.
+#   She swallowed the dog to catch the cat.
+#   She swallowed the cat to catch the bird.
+#   She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+#   She swallowed the spider to catch the fly.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+# actual (8 lines):
+#   I know an old lady who swallowed a cow.
+#   I don't know how she swallowed a cow!
+#   She swallowed the cow to catch the goat.
+#   She swallowed the goat to catch the dog.
+#   She swallowed the dog to catch the cat.
+#   She swallowed the cat to catch the bird.
+#   She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+# --
+#
+ok 8 horse
+not ok 9 multiple verses
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-food-chain.bats, line 149)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected (13 lines):
+#   I know an old lady who swallowed a fly.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+#
+#   I know an old lady who swallowed a spider.
+#   It wriggled and jiggled and tickled inside her.
+#   She swallowed the spider to catch the fly.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+#
+#   I know an old lady who swallowed a bird.
+#   How absurd to swallow a bird!
+#   She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+#   She swallowed the spider to catch the fly.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+# actual (11 lines):
+#   I know an old lady who swallowed a fly.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+#
+#   I know an old lady who swallowed a spider.
+#   It wriggled and jiggled and tickled inside her.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+#
+#   I know an old lady who swallowed a bird.
+#   How absurd to swallow a bird!
+#   She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+# --
+#
+not ok 10 full song
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-food-chain.bats, line 209)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected (50 lines):
+#   I know an old lady who swallowed a fly.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+#
+#   I know an old lady who swallowed a spider.
+#   It wriggled and jiggled and tickled inside her.
+#   She swallowed the spider to catch the fly.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+#
+#   I know an old lady who swallowed a bird.
+#   How absurd to swallow a bird!
+#   She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+#   She swallowed the spider to catch the fly.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+#
+#   I know an old lady who swallowed a cat.
+#   Imagine that, to swallow a cat!
+#   She swallowed the cat to catch the bird.
+#   She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+#   She swallowed the spider to catch the fly.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+#
+#   I know an old lady who swallowed a dog.
+#   What a hog, to swallow a dog!
+#   She swallowed the dog to catch the cat.
+#   She swallowed the cat to catch the bird.
+#   She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+#   She swallowed the spider to catch the fly.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+#
+#   I know an old lady who swallowed a goat.
+#   Just opened her throat and swallowed a goat!
+#   She swallowed the goat to catch the dog.
+#   She swallowed the dog to catch the cat.
+#   She swallowed the cat to catch the bird.
+#   She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+#   She swallowed the spider to catch the fly.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+#
+#   I know an old lady who swallowed a cow.
+#   I don't know how she swallowed a cow!
+#   She swallowed the cow to catch the goat.
+#   She swallowed the goat to catch the dog.
+#   She swallowed the dog to catch the cat.
+#   She swallowed the cat to catch the bird.
+#   She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+#   She swallowed the spider to catch the fly.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+#
+#   I know an old lady who swallowed a horse.
+#   She's dead, of course!
+# actual (44 lines):
+#   I know an old lady who swallowed a fly.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+#
+#   I know an old lady who swallowed a spider.
+#   It wriggled and jiggled and tickled inside her.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+#
+#   I know an old lady who swallowed a bird.
+#   How absurd to swallow a bird!
+#   She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+#
+#   I know an old lady who swallowed a cat.
+#   Imagine that, to swallow a cat!
+#   She swallowed the cat to catch the bird.
+#   She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+#
+#   I know an old lady who swallowed a dog.
+#   What a hog, to swallow a dog!
+#   She swallowed the dog to catch the cat.
+#   She swallowed the cat to catch the bird.
+#   She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+#
+#   I know an old lady who swallowed a goat.
+#   Just opened her throat and swallowed a goat!
+#   She swallowed the goat to catch the dog.
+#   She swallowed the dog to catch the cat.
+#   She swallowed the cat to catch the bird.
+#   She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+#
+#   I know an old lady who swallowed a cow.
+#   I don't know how she swallowed a cow!
+#   She swallowed the cow to catch the goat.
+#   She swallowed the goat to catch the dog.
+#   She swallowed the dog to catch the cat.
+#   She swallowed the cat to catch the bird.
+#   She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.
+#   I don't know why she swallowed the fly. Perhaps she'll die.
+#
+#   I know an old lady who swallowed a horse.
+#   She's dead, of course!
+# --
+#
+

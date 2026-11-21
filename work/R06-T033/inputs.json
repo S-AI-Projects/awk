@@ -1,0 +1,24 @@
+{
+  "exercise": "food-chain",
+  "task": "R06-T033",
+  "timestamp": "2026-11-21T06:53:00.067062+00:00",
+  "tool_versions": {
+    "Bash Version": "GNU bash, version 5.3.20(1)-release (aarch64-apple-darwin27.0.0)",
+    "AWK Version": "GNU Awk 5.4.2, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0)",
+    "Bats Version": "Bats 1.14.0",
+    "Python Version": "Python 3.9.6",
+    "jq Version": "jq-1.7.1-apple"
+  },
+  "mutation_details": {
+    "file": "exercises/practice/food-chain/.meta/example.awk",
+    "function": "verse(i, j)",
+    "original_code": "for (j = i - 1; j >= 1; j--)",
+    "mutated_code": "for (j = i - 1; j > 1; j--)",
+    "nature_of_mutation": "Off-by-one boundary error in cumulative catch chain loop condition",
+    "rejecting_test_case": "spider",
+    "smallest_rejecting_input": {
+      "start": 2,
+      "end": 2
+    }
+  }
+}
