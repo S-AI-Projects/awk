@@ -1,0 +1,23 @@
+[
+  {
+    "id": "small",
+    "name": "encode yes",
+    "expected": "xbt",
+    "actual": "xbt",
+    "correctness": true
+  },
+  {
+    "id": "medium",
+    "name": "encode mindblowingly",
+    "expected": "rzcwa gnxzc dgt",
+    "actual": "rzcwa gnxzc dgt",
+    "correctness": true
+  },
+  {
+    "id": "large",
+    "name": "encode all the letters",
+    "expected": "swxtj npvyk lruol iejdc blaxk swxmh qzglf",
+    "actual": "swxtj npvyk lruol iejdc blaxk swxmh qzglf",
+    "correctness": true
+  }
+]

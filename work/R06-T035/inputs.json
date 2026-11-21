@@ -1,0 +1,32 @@
+[
+  {
+    "id": "small",
+    "name": "encode yes",
+    "record": "encode|5|7|yes",
+    "a": 5,
+    "b": 7,
+    "phrase": "yes",
+    "raw_len": 3,
+    "alnum_len": 3
+  },
+  {
+    "id": "medium",
+    "name": "encode mindblowingly",
+    "record": "encode|11|15|mindblowingly",
+    "a": 11,
+    "b": 15,
+    "phrase": "mindblowingly",
+    "raw_len": 14,
+    "alnum_len": 14
+  },
+  {
+    "id": "large",
+    "name": "encode all the letters",
+    "record": "encode|17|33|The quick brown fox jumps over the lazy dog.",
+    "a": 17,
+    "b": 33,
+    "phrase": "The quick brown fox jumps over the lazy dog.",
+    "raw_len": 43,
+    "alnum_len": 35
+  }
+]

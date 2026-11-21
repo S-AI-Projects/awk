@@ -1,0 +1,102 @@
+{
+  "cli_process_timings": {
+    "small": {
+      "repetitions": 7,
+      "raw_times_ms": [
+        4.9413,
+        5.0423,
+        5.0959,
+        5.1173,
+        5.1225,
+        5.128,
+        5.131
+      ],
+      "median_ms": 5.1173,
+      "mean_ms": 5.0826,
+      "min_ms": 4.9413,
+      "max_ms": 5.131,
+      "stdev_ms": 0.0695
+    },
+    "medium": {
+      "repetitions": 7,
+      "raw_times_ms": [
+        5.0132,
+        5.0337,
+        5.0417,
+        5.0537,
+        5.1264,
+        5.1462,
+        5.1632
+      ],
+      "median_ms": 5.0537,
+      "mean_ms": 5.0826,
+      "min_ms": 5.0132,
+      "max_ms": 5.1632,
+      "stdev_ms": 0.0608
+    },
+    "large": {
+      "repetitions": 7,
+      "raw_times_ms": [
+        5.1092,
+        5.1205,
+        5.1627,
+        5.4628,
+        5.5812,
+        5.5967,
+        5.7445
+      ],
+      "median_ms": 5.4628,
+      "mean_ms": 5.3968,
+      "min_ms": 5.1092,
+      "max_ms": 5.7445,
+      "stdev_ms": 0.2624
+    }
+  },
+  "internal_algorithmic_timings": {
+    "small": {
+      "iterations_per_run": 5000,
+      "repetitions": 5,
+      "raw_ms_per_call": [
+        0.001446,
+        0.001456,
+        0.001482,
+        0.001488,
+        0.001564
+      ],
+      "median_ms_per_call": 0.001482,
+      "mean_ms_per_call": 0.001487,
+      "min_ms_per_call": 0.001446,
+      "max_ms_per_call": 0.001564
+    },
+    "medium": {
+      "iterations_per_run": 5000,
+      "repetitions": 5,
+      "raw_ms_per_call": [
+        0.004213,
+        0.00423,
+        0.004298,
+        0.0043,
+        0.004373
+      ],
+      "median_ms_per_call": 0.004298,
+      "mean_ms_per_call": 0.004283,
+      "min_ms_per_call": 0.004213,
+      "max_ms_per_call": 0.004373
+    },
+    "large": {
+      "iterations_per_run": 5000,
+      "repetitions": 5,
+      "raw_ms_per_call": [
+        0.013143,
+        0.013179,
+        0.013271,
+        0.013372,
+        0.013383
+      ],
+      "median_ms_per_call": 0.013271,
+      "mean_ms_per_call": 0.01327,
+      "min_ms_per_call": 0.013143,
+      "max_ms_per_call": 0.013383
+    }
+  }
+}

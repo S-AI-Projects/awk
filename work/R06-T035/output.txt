@@ -1,0 +1,29 @@
+=== Validation TAP Output ===
+Processing affine-cipher
+1..16
+ok 1 encode yes
+ok 2 encode no
+ok 3 encode OMG
+ok 4 encode O M G
+ok 5 encode mindblowingly
+ok 6 encode numbers
+ok 7 encode deep thought
+ok 8 encode all the letters
+ok 9 encode with a not coprime to m
+ok 10 decode exercism
+ok 11 decode a sentence
+ok 12 decode numbers
+ok 13 decode all the letters
+ok 14 decode with no spaces in input
+ok 15 decode with too many spaces
+ok 16 decode with a not coprime to m
+
+=== End-to-End CLI Process Timings (Median over 7 runs) ===
+small: median=5.1173 ms (all: [4.9413, 5.0423, 5.0959, 5.1173, 5.1225, 5.128, 5.131])
+medium: median=5.0537 ms (all: [5.0132, 5.0337, 5.0417, 5.0537, 5.1264, 5.1462, 5.1632])
+large: median=5.4628 ms (all: [5.1092, 5.1205, 5.1627, 5.4628, 5.5812, 5.5967, 5.7445])
+
+=== Internal Algorithmic Timings (Median over 5 runs, 5000 reps each) ===
+small: median=0.001482 ms/call
+medium: median=0.004298 ms/call
+large: median=0.013271 ms/call
