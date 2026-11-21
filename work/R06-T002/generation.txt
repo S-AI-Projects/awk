@@ -1,0 +1,1 @@
+PASS: maintained test source copied identically twice; sha256=ce94013f4c82fbcd6648e382c0433e6f5004015fde36d9dddb1e64aa9ec1439e; all three required cases are present. bin/generate_tests is not applicable because .meta/template.j2 is absent.

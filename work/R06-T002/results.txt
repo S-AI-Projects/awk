@@ -1,0 +1,26 @@
+Executed cases: 16
+Maintained-source check: PASS: maintained test source copied identically twice; sha256=ce94013f4c82fbcd6648e382c0433e6f5004015fde36d9dddb1e64aa9ec1439e; all three required cases are present. bin/generate_tests is not applicable because .meta/template.j2 is absent.
+
+Validator output:
+Processing simple-cipher
+1..16
+ok 1 Can generate a random key
+ok 2 Can encode random
+ok 3 Can decode random
+ok 4 Is reversible random
+ok 5 Can encode
+ok 6 Can decode
+ok 7 Is reversible
+ok 8 Can double shift encode
+ok 9 Can wrap on encode
+ok 10 Can wrap on decode
+ok 11 Can encode messages longer than the key
+ok 12 Can decode messages longer than the key
+ok 13 plaintext is lowercased
+ok 14 ciphertext is lowercased
+ok 15 key must be lowercase
+ok 16 key must be letters
+
+Python: 3.14.6 (v3.14.6:c63aec69bd5, Jun 10 2026, 08:07:54) [Clang 21.0.0 (clang-2100.1.1.101)]
+GNU awk: GNU Awk 5.4.2, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0)
+Bats: Bats 1.14.0
