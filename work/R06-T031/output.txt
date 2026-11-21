@@ -1,0 +1,36 @@
+=== EXECUTION SUMMARY ===
+Exercise: largest-series-product
+Task: R06-T031
+Timestamp: 2026-11-21T06:20:31.294868+00:00
+Validator Exit Code: 0
+TOML Canonical Cases: 18 (Included: 13, Excluded: 5)
+Tests Executed: 13 (Passed: 13, Failed: 0)
+Learner Stub Status: Untouched (unsolved)
+
+=== NAMED BASELINE CASES ===
+1. finds the largest product if span equals length: PASS (Output: '18')
+2. can find the largest product of 2 with numbers in order: PASS (Output: '72')
+3. can find the largest product of 2: PASS (Output: '48')
+
+=== TARGET UUID RATIONALES ===
+- 5d81aaf7-4f67-4125-bf33-11493cc7eab7: Replacement case: superseded by 0ae1ce53-d9ba-41bb-827f-2fceb64f058b which tests assert(span <= len, "span must not exceed string length") using AWK length($1).
+- 06bc8b90-0c51-4c54-ac22-3ec3893a079e: Unsupported behavior: in AWK field splitting with FS=",", empty digits yield empty $1 (length 0), failing validation assert($1 ~ /^[[:digit:]]+$/) and assert(span > 0).
+- 3ec0d92e-f2e2-4090-a380-70afee02f4c0: Unsupported behavior: span 0 on non-empty string produces degenerate 0-length slices in substr($1, i, span) and split("", digits, ""); excluded as contract requires positive spans (assert(span > 0)).
+
+=== VALIDATOR STDOUT ===
+Processing largest-series-product
+1..13
+ok 1 finds the largest product if span equals length
+ok 2 can find the largest product of 2 with numbers in order
+ok 3 can find the largest product of 2
+ok 4 can find the largest product of 3 with numbers in order
+ok 5 can find the largest product of 3
+ok 6 can find the largest product of 5 with numbers in order
+ok 7 can get the largest product of a big number
+ok 8 reports zero if the only digits are zero
+ok 9 reports zero if all spans include zero
+ok 10 rejects span longer than string length
+ok 11 rejects empty string and nonzero span
+ok 12 rejects invalid character in digits
+ok 13 rejects negative span
+

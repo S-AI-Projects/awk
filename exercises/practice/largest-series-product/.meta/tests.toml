@@ -39,6 +39,7 @@ description = "reports zero if all spans include zero"
 [5d81aaf7-4f67-4125-bf33-11493cc7eab7]
 description = "rejects span longer than string length"
 include = false
+comment = "Replacement case: superseded by 0ae1ce53-d9ba-41bb-827f-2fceb64f058b which tests assert(span <= len, \"span must not exceed string length\") using AWK length($1)."
 
 [0ae1ce53-d9ba-41bb-827f-2fceb64f058b]
 description = "rejects span longer than string length"
@@ -47,10 +48,12 @@ reimplements = "5d81aaf7-4f67-4125-bf33-11493cc7eab7"
 [06bc8b90-0c51-4c54-ac22-3ec3893a079e]
 description = "reports 1 for empty string and empty product (0 span)"
 include = false
+comment = "Unsupported behavior: in AWK field splitting with FS=\",\", empty digits yield empty $1 (length 0), failing validation assert($1 ~ /^[[:digit:]]+$/) and assert(span > 0)."
 
 [3ec0d92e-f2e2-4090-a380-70afee02f4c0]
 description = "reports 1 for nonempty string and empty product (0 span)"
 include = false
+comment = "Unsupported behavior: span 0 on non-empty string produces degenerate 0-length slices in substr($1, i, span) and split(\"\", digits, \"\"); excluded as contract requires positive spans (assert(span > 0))."
 
 [6d96c691-4374-4404-80ee-2ea8f3613dd4]
 description = "rejects empty string and nonzero span"

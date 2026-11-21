@@ -1,0 +1,34 @@
+{
+  "exercise": "largest-series-product",
+  "task": "R06-T031",
+  "total_canonical_cases": 18,
+  "included_count": 13,
+  "excluded_count": 5,
+  "target_rationales": {
+    "5d81aaf7-4f67-4125-bf33-11493cc7eab7": {
+      "description": "rejects span longer than string length",
+      "include": false,
+      "category": "replacement",
+      "comment": "Replacement case: superseded by 0ae1ce53-d9ba-41bb-827f-2fceb64f058b which tests assert(span <= len, \"span must not exceed string length\") using AWK length($1)."
+    },
+    "06bc8b90-0c51-4c54-ac22-3ec3893a079e": {
+      "description": "reports 1 for empty string and empty product (0 span)",
+      "include": false,
+      "category": "unsupported",
+      "comment": "Unsupported behavior: in AWK field splitting with FS=\",\", empty digits yield empty $1 (length 0), failing validation assert($1 ~ /^[[:digit:]]+$/) and assert(span > 0)."
+    },
+    "3ec0d92e-f2e2-4090-a380-70afee02f4c0": {
+      "description": "reports 1 for nonempty string and empty product (0 span)",
+      "include": false,
+      "category": "unsupported",
+      "comment": "Unsupported behavior: span 0 on non-empty string produces degenerate 0-length slices in substr($1, i, span) and split(\"\", digits, \"\"); excluded as contract requires positive spans (assert(span > 0))."
+    }
+  },
+  "tool_versions": {
+    "Bash Version": "GNU bash, version 5.3.20(1)-release (aarch64-apple-darwin27.0.0)",
+    "AWK Version": "GNU Awk 5.4.2, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0)",
+    "Bats Version": "Bats 1.14.0",
+    "Python Version": "Python 3.9.6",
+    "jq Version": "jq-1.7.1-apple"
+  }
+}
