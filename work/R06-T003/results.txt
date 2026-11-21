@@ -1,0 +1,157 @@
+Input: start=2,end=2
+Expected: This is the malt that lay in the house that Jack built.
+Original exit: 0
+Mutant exit: 1
+Executed original cases: 15
+
+Mutant output:
+Processing house
+1..15
+not ok 1 verse two - the malt that lay
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-house.bats, line 14)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected : This is the malt that lay in the house that Jack built.
+# actual   : This is the malt that lay in
+# --
+#
+not ok 2 verse three - the rat that ate
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-house.bats, line 25)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected : This is the rat that ate the malt that lay in the house that Jack built.
+# actual   : This is the rat that ate the malt that lay in
+# --
+#
+not ok 3 verse six - the cow with the crumpled horn
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-house.bats, line 36)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected : This is the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.
+# actual   : This is the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in
+# --
+#
+not ok 4 verse seven - the maiden all forlorn
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-house.bats, line 47)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected : This is the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.
+# actual   : This is the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in
+# --
+#
+not ok 5 verse eight - the man all tattered and torn
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-house.bats, line 58)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected : This is the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.
+# actual   : This is the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in
+# --
+#
+not ok 6 verse nine - the priest all shaven and shorn
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-house.bats, line 69)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected : This is the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.
+# actual   : This is the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in
+# --
+#
+not ok 7 verse 10 - the rooster that crowed in the morn
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-house.bats, line 80)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected : This is the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.
+# actual   : This is the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in
+# --
+#
+not ok 8 verse 11 - the farmer sowing his corn
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-house.bats, line 91)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected : This is the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.
+# actual   : This is the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in
+# --
+#
+not ok 9 verse 12 - the horse and the hound and the horn
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-house.bats, line 102)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected : This is the horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.
+# actual   : This is the horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in
+# --
+#
+not ok 10 multiple verses
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-house.bats, line 117)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected (5 lines):
+#   This is the cat that killed the rat that ate the malt that lay in the house that Jack built.
+#   This is the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.
+#   This is the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.
+#   This is the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.
+#   This is the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.
+# actual (5 lines):
+#   This is the cat that killed the rat that ate the malt that lay in
+#   This is the dog that worried the cat that killed the rat that ate the malt that lay in
+#   This is the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in
+#   This is the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in
+#   This is the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in
+# --
+#
+not ok 11 full rhyme
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-house.bats, line 139)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected (12 lines):
+#   This is the house that Jack built.
+#   This is the malt that lay in the house that Jack built.
+#   This is the rat that ate the malt that lay in the house that Jack built.
+#   This is the cat that killed the rat that ate the malt that lay in the house that Jack built.
+#   This is the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.
+#   This is the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.
+#   This is the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.
+#   This is the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.
+#   This is the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.
+#   This is the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.
+#   This is the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.
+#   This is the horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.
+# actual (12 lines):
+#   This is
+#   This is the malt that lay in
+#   This is the rat that ate the malt that lay in
+#   This is the cat that killed the rat that ate the malt that lay in
+#   This is the dog that worried the cat that killed the rat that ate the malt that lay in
+#   This is the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in
+#   This is the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in
+#   This is the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in
+#   This is the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in
+#   This is the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in
+#   This is the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in
+#   This is the horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in
+# --
+#
+ok 12 invalid verse 1
+ok 13 invalid verse 2
+ok 14 invalid verse 3
+ok 15 invalid verse 4
