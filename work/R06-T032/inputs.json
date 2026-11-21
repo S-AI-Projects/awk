@@ -1,0 +1,26 @@
+{
+  "exercise": "mazy-mice",
+  "task": "R06-T032",
+  "total_canonical_cases": 10,
+  "included_count": 10,
+  "excluded_count": 0,
+  "test_cases": {
+    "c101a001-0001-4000-8000-000000000001": "the smallest square maze is perfect",
+    "c101a001-0001-4000-8000-000000000002": "the small rectangular maze is perfect",
+    "c101a001-0001-4000-8000-000000000003": "the square maze is perfect",
+    "c101a001-0001-4000-8000-000000000004": "the large rectangular maze is perfect",
+    "c101a001-0001-4000-8000-000000000005": "the rectangular maze with aspect 2:1 is perfect",
+    "c101a001-0001-4000-8000-000000000006": "the huge rectangular maze is perfect",
+    "c101a001-0001-4000-8000-000000000007": "the huge square maze is perfect",
+    "c101a001-0001-4000-8000-000000000008": "if the seed parameter is specified, the perfect maze generated",
+    "c101a001-0001-4000-8000-000000000009": "if the seed parameter is omitted, random mazes should be generated",
+    "c101a001-0001-4000-8000-000000000010": "if the seed parameter is specified, the same maze should be generated"
+  },
+  "tool_versions": {
+    "Bash Version": "GNU bash, version 5.3.20(1)-release (aarch64-apple-darwin27.0.0)",
+    "AWK Version": "GNU Awk 5.4.2, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0)",
+    "Bats Version": "Bats 1.14.0",
+    "Python Version": "Python 3.9.6",
+    "jq Version": "jq-1.7.1-apple"
+  }
+}

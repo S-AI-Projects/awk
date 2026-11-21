@@ -1,0 +1,104 @@
+{
+  "exercise": "mazy-mice",
+  "task": "R06-T032",
+  "timestamp": "2026-11-21T06:39:29.328867+00:00",
+  "validator_run": {
+    "exit_code": 0,
+    "total_cases": 10,
+    "passed_cases": 10,
+    "failed_cases": 0
+  },
+  "reproducibility_check": {
+    "status": "PASS",
+    "fresh_copies": 2,
+    "timestamp_normalization": "documented generated timestamp line removed",
+    "test_count_run1": 10,
+    "test_count_run2": 10,
+    "differences": []
+  },
+  "named_anchor_cases": [
+    {
+      "test_number": 1,
+      "description": "the smallest square maze is perfect",
+      "input_parameters": "Rows=5, Cols=5",
+      "expected_validator_output": "The maze is perfect.",
+      "status": "PASS"
+    },
+    {
+      "test_number": 2,
+      "description": "the small rectangular maze is perfect",
+      "input_parameters": "Rows=5, Cols=10",
+      "expected_validator_output": "The maze is perfect.",
+      "status": "PASS"
+    },
+    {
+      "test_number": 3,
+      "description": "the square maze is perfect",
+      "input_parameters": "Rows=10, Cols=10",
+      "expected_validator_output": "The maze is perfect.",
+      "status": "PASS"
+    }
+  ],
+  "cases": [
+    {
+      "test_number": 1,
+      "description": "the smallest square maze is perfect",
+      "status": "PASS",
+      "is_named_anchor_case": true
+    },
+    {
+      "test_number": 2,
+      "description": "the small rectangular maze is perfect",
+      "status": "PASS",
+      "is_named_anchor_case": true
+    },
+    {
+      "test_number": 3,
+      "description": "the square maze is perfect",
+      "status": "PASS",
+      "is_named_anchor_case": true
+    },
+    {
+      "test_number": 4,
+      "description": "the large rectangular maze is perfect",
+      "status": "PASS",
+      "is_named_anchor_case": false
+    },
+    {
+      "test_number": 5,
+      "description": "the rectangular maze with aspect 2:1 is perfect",
+      "status": "PASS",
+      "is_named_anchor_case": false
+    },
+    {
+      "test_number": 6,
+      "description": "the huge rectangular maze is perfect",
+      "status": "PASS",
+      "is_named_anchor_case": false
+    },
+    {
+      "test_number": 7,
+      "description": "the huge square maze is perfect",
+      "status": "PASS",
+      "is_named_anchor_case": false
+    },
+    {
+      "test_number": 8,
+      "description": "if the seed parameter is specified, the perfect maze generated",
+      "status": "PASS",
+      "is_named_anchor_case": false
+    },
+    {
+      "test_number": 9,
+      "description": "if the seed parameter is omitted, random mazes should be generated",
+      "status": "PASS",
+      "is_named_anchor_case": false
+    },
+    {
+      "test_number": 10,
+      "description": "if the seed parameter is specified, the same maze should be generated",
+      "status": "PASS",
+      "is_named_anchor_case": false
+    }
+  ]
+}

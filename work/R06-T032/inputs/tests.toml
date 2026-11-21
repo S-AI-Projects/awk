@@ -1,0 +1,35 @@
+# This file tracks test cases for mazy-mice in the AWK track.
+# Mazy Mice is an AWK track practice exercise authored by rabestro.
+# As it requires an external maze verification script (test-maze.awk)
+# and specialized variable assignments, its tests in test-mazy-mice.bats
+# are maintained by hand rather than generated via template.j2.
+
+[c101a001-0001-4000-8000-000000000001]
+description = "the smallest square maze is perfect"
+
+[c101a001-0001-4000-8000-000000000002]
+description = "the small rectangular maze is perfect"
+
+[c101a001-0001-4000-8000-000000000003]
+description = "the square maze is perfect"
+
+[c101a001-0001-4000-8000-000000000004]
+description = "the large rectangular maze is perfect"
+
+[c101a001-0001-4000-8000-000000000005]
+description = "the rectangular maze with aspect 2:1 is perfect"
+
+[c101a001-0001-4000-8000-000000000006]
+description = "the huge rectangular maze is perfect"
+
+[c101a001-0001-4000-8000-000000000007]
+description = "the huge square maze is perfect"
+
+[c101a001-0001-4000-8000-000000000008]
+description = "if the seed parameter is specified, the perfect maze generated"
+
+[c101a001-0001-4000-8000-000000000009]
+description = "if the seed parameter is omitted, random mazes should be generated"
+
+[c101a001-0001-4000-8000-000000000010]
+description = "if the seed parameter is specified, the same maze should be generated"
