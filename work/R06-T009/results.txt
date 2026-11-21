@@ -1,0 +1,30 @@
+Learner SHA-256 before: 09d5b62e5a51fa7eaf55e6af4d846f1d3444e7988495ae46d31c5842d438674d
+Learner SHA-256 after success/failure/zero-selection: 09d5b62e5a51fa7eaf55e6af4d846f1d3444e7988495ae46d31c5842d438674d
+Success exit: 0; output:
+Processing hello-world
+1..1
+ok 1 Say Hi!
+Executed tests: 1
+
+Failing-reference exit: 1; output:
+Processing hello-world
+1..1
+not ok 1 Say Hi!
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file test-hello-world.bats, line 13)
+#   `assert_output "Hello, World!"' failed
+#
+# -- output differs --
+# expected : Hello, World!
+# actual   : Not the expected greeting!
+# --
+#
+Executed tests: 1
+
+Empty-selection exit: 1; output:
+ERROR: Found no tests. (Try `--allow-empty-suite`?)1..0
+Executed tests: 0
+
+Python: 3.14.6 (v3.14.6:c63aec69bd5, Jun 10 2026, 08:07:54) [Clang 21.0.0 (clang-2100.1.1.101)]
+Bats 1.14.0
+GNU Awk 5.4.2, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0)
