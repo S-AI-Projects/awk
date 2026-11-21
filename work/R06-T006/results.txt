@@ -1,0 +1,9 @@
+Reference cases: 14
+Alternative cases: 14
+GNU Awk 5.4.2, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0)
+Python: 3.14.6 (v3.14.6:c63aec69bd5, Jun 10 2026, 08:07:54) [Clang 21.0.0 (clang-2100.1.1.101)]
+Micro-examples (expected vs actual):
+input=yes; expected=bvh; actual=bvh; exit=0
+input=no; expected=ml; actual=ml; exit=0
+input=OMG; expected=lnt; actual=lnt; exit=0
+Trade-off: direct string search has no map setup but searches the 26-character alphabet for each letter.
