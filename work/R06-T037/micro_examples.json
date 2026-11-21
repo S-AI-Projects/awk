@@ -1,0 +1,13 @@
+{
+  "construct": "Dynamic Field Manipulation via NF and $NF",
+  "snippet_1_correct": {
+    "code": "function push(val) { NF++; $NF = val }\nfunction pop()     { NF-- }\nBEGIN {\n    NF = 0\n    push(1)\n    push(2)\n    print\n    pop()\n    push(3)\n    print\n}\n",
+    "output": "1 2\n1 3",
+    "behavior": "push(val) and pop() correctly maintain field stack, emitting '1 2' then '1 3'"
+  },
+  "snippet_2_pitfall": {
+    "code": "function push(val) { NF++; $NF = val }\nBEGIN {\n    NF = 0\n    push(1)\n    push(2)\n    print\n    # Pitfall: Missing pop() / NF-- before exploring next branch\n    push(3)\n    print\n}\n",
+    "output": "1 2\n1 2 3",
+    "behavior": "omitting pop() / NF-- causes field accumulation, leaking field 2 into '1 2 3'"
+  }
+}

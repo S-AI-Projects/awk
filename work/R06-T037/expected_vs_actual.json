@@ -1,0 +1,33 @@
+{
+  "test_suite_status": "All 13 tests passed",
+  "named_cases": [
+    {
+      "name": "1",
+      "expected": "1",
+      "actual": "1",
+      "match": true
+    },
+    {
+      "name": "2",
+      "expected": "2",
+      "actual": "2",
+      "match": true
+    },
+    {
+      "name": "3",
+      "expected": "3",
+      "actual": "3",
+      "match": true
+    }
+  ],
+  "micro_example_1": {
+    "expected": "1 2\n1 3",
+    "actual": "1 2\n1 3",
+    "match": true
+  },
+  "micro_example_2": {
+    "expected": "1 2\n1 2 3",
+    "actual": "1 2\n1 2 3",
+    "match": true
+  }
+}

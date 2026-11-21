@@ -1,0 +1,25 @@
+{
+  "named_cases": [
+    {
+      "id": "1",
+      "input": "1 1",
+      "expected": "1"
+    },
+    {
+      "id": "2",
+      "input": "2 1",
+      "expected": "2"
+    },
+    {
+      "id": "3",
+      "input": "3 1",
+      "expected": "3"
+    }
+  ],
+  "micro_example_1": {
+    "snippet": "function push(val) { NF++; $NF = val }\nfunction pop()     { NF-- }\nBEGIN {\n    NF = 0\n    push(1)\n    push(2)\n    print\n    pop()\n    push(3)\n    print\n}\n"
+  },
+  "micro_example_2": {
+    "snippet": "function push(val) { NF++; $NF = val }\nBEGIN {\n    NF = 0\n    push(1)\n    push(2)\n    print\n    # Pitfall: Missing pop() / NF-- before exploring next branch\n    push(3)\n    print\n}\n"
+  }
+}
