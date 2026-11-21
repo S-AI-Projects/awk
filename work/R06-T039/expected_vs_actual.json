@@ -1,0 +1,21 @@
+{
+  "scenarios": {
+    "real_reference": {
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "expected_test_count": 7,
+      "actual_test_count": 7
+    },
+    "failing_reference": {
+      "expected_exit_code": "non-zero",
+      "actual_exit_code": 1
+    },
+    "zero_test_run": {
+      "expected_exit_code": "non-zero or zero-test error",
+      "actual_exit_code": 1
+    }
+  },
+  "hash_verification": {
+    "all_runs_intact": true
+  }
+}

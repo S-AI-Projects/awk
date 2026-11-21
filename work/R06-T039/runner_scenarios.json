@@ -1,0 +1,24 @@
+{
+  "real_reference": {
+    "status": "PASS",
+    "exit_code": 0,
+    "test_count": 7,
+    "named_cases_passed": true,
+    "learner_hashes_intact": true,
+    "stdout_summary": "Processing pythagorean-triplet\n1..7\nok 1 triplets whose sum is 12\nok 2 triplets whose sum is 108\nok 3 triplets whose sum is 1000\nok 4 no matching triplets for 1001\nok 5 returns all matching triplets\nok 6 several matching triplets\nok 7 triplets for large number"
+  },
+  "failing_reference": {
+    "status": "PASS_DETECTED_FAILURE",
+    "exit_code": 1,
+    "expected_failure": true,
+    "learner_hashes_intact": true,
+    "stdout_summary": "Processing pythagorean-triplet\n1..7\nnot ok 1 triplets whose sum is 12\n# (from function `assert_success' in file bats-extra.bash, line 409,\n#  in test file test-pythagorean-triplet.bats, line 13)\n#   `assert_success' failed\n#\n# -- command failed --\n# status : 1\n# output (2 lines):\n#   gawk: pythagore"
+  },
+  "zero_test_run": {
+    "status": "PASS_REJECTED_ZERO_TESTS",
+    "exit_code": 1,
+    "zero_tests_detected": true,
+    "learner_hashes_intact": true,
+    "stdout_summary": ""
+  }
+}
