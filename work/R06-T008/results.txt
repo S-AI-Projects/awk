@@ -1,0 +1,21 @@
+Config checker: PASS: solution, test, example, and all declared files resolve inside rectangles
+Negative fixtures: missing solution file, missing test file, outside-exercise example path all rejected for intended reasons.
+Reference cases executed: 14
+Python: 3.14.6 (v3.14.6:c63aec69bd5, Jun 10 2026, 08:07:54) [Clang 21.0.0 (clang-2100.1.1.101)]
+Validator output:
+Processing rectangles
+1..14
+ok 1 no rows
+ok 2 no columns
+ok 3 no rectangles
+ok 4 one rectangle
+ok 5 two rectangles without shared parts
+ok 6 five rectangles with shared parts
+ok 7 rectangle of height 1 is counted
+ok 8 rectangle of width 1 is counted
+ok 9 1x1 square is counted
+ok 10 only complete rectangles are counted
+ok 11 rectangles can be of different sizes
+ok 12 corner is required for a rectangle to be complete
+ok 13 large input with many rectangles
+ok 14 rectangles must have four sides
