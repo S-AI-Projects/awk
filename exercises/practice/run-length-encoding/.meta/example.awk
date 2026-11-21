@@ -16,6 +16,8 @@ BEGIN {
     }
 }
 
+# Each character updates one run state in a single pass: Θ(n) work.
+# GNU awk also stores the record and its split fields, so total memory is Θ(n).
 function encoder(    i, n, prev) {
     for (i = 1; i <= NF; i++) {
         if ($i == prev) {

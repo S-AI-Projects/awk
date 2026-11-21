@@ -1,0 +1,7 @@
+Reference tests executed: 13
+Python: 3.14.6 (v3.14.6:c63aec69bd5, Jun 10 2026, 08:07:54) [Clang 21.0.0 (clang-2100.1.1.101)]
+GNU Awk 5.4.2, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0)
+Measurements: 5 repetitions per size, correctness asserted before timing; end-to-end process time.
+n=256; expected=256A; median_ms=4.651; samples_ms=4.651,4.631,4.580,4.828,4.664
+n=512; expected=512A; median_ms=4.762; samples_ms=4.857,4.603,4.759,4.768,4.762
+n=1024; expected=1024A; median_ms=4.907; samples_ms=4.894,4.907,4.938,4.768,4.939
