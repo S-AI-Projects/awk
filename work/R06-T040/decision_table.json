@@ -1,0 +1,123 @@
+[
+  {
+    "name": "slices of one from one",
+    "series": "1",
+    "len": 1,
+    "condition": "1 <= len <= L (single char)",
+    "expected_exit_code": 0,
+    "actual_exit_code": 0,
+    "expected_result": "1",
+    "actual_result": "1",
+    "status": "PASS"
+  },
+  {
+    "name": "slices of one from two",
+    "series": "12",
+    "len": 1,
+    "condition": "1 <= len <= L (multiple single chars)",
+    "expected_exit_code": 0,
+    "actual_exit_code": 0,
+    "expected_result": "1 2",
+    "actual_result": "1 2",
+    "status": "PASS"
+  },
+  {
+    "name": "slices of two",
+    "series": "35",
+    "len": 2,
+    "condition": "len == L (single full-length slice)",
+    "expected_exit_code": 0,
+    "actual_exit_code": 0,
+    "expected_result": "35",
+    "actual_result": "35",
+    "status": "PASS"
+  },
+  {
+    "name": "slices of two overlap",
+    "series": "9142",
+    "len": 2,
+    "condition": "1 < len < L (overlapping slices)",
+    "expected_exit_code": 0,
+    "actual_exit_code": 0,
+    "expected_result": "91 14 42",
+    "actual_result": "91 14 42",
+    "status": "PASS"
+  },
+  {
+    "name": "slices can include duplicates",
+    "series": "777777",
+    "len": 3,
+    "condition": "1 < len < L (duplicate values)",
+    "expected_exit_code": 0,
+    "actual_exit_code": 0,
+    "expected_result": "777 777 777 777",
+    "actual_result": "777 777 777 777",
+    "status": "PASS"
+  },
+  {
+    "name": "slices of a long series",
+    "series": "918493904243",
+    "len": 5,
+    "condition": "1 < len < L (long series)",
+    "expected_exit_code": 0,
+    "actual_exit_code": 0,
+    "expected_result": "91849 18493 84939 49390 93904 39042 90424 04243",
+    "actual_result": "91849 18493 84939 49390 93904 39042 90424 04243",
+    "status": "PASS"
+  },
+  {
+    "name": "slice length is too large",
+    "series": "12345",
+    "len": 6,
+    "condition": "len == L + 1 (len > L)",
+    "expected_exit_code": 1,
+    "actual_exit_code": 1,
+    "expected_result": "slice length cannot be greater than series length",
+    "actual_result": "slice length cannot be greater than series length",
+    "status": "PASS"
+  },
+  {
+    "name": "slice length is way too large",
+    "series": "12345",
+    "len": 42,
+    "condition": "len >> L (len much greater than L)",
+    "expected_exit_code": 1,
+    "actual_exit_code": 1,
+    "expected_result": "slice length cannot be greater than series length",
+    "actual_result": "slice length cannot be greater than series length",
+    "status": "PASS"
+  },
+  {
+    "name": "slice length cannot be zero",
+    "series": "12345",
+    "len": 0,
+    "condition": "len == 0",
+    "expected_exit_code": 1,
+    "actual_exit_code": 1,
+    "expected_result": "slice length cannot be zero",
+    "actual_result": "slice length cannot be zero",
+    "status": "PASS"
+  },
+  {
+    "name": "slice length cannot be negative",
+    "series": "123",
+    "len": -1,
+    "condition": "len < 0",
+    "expected_exit_code": 1,
+    "actual_exit_code": 1,
+    "expected_result": "slice length cannot be negative",
+    "actual_result": "slice length cannot be negative",
+    "status": "PASS"
+  },
+  {
+    "name": "empty series is invalid",
+    "series": "",
+    "len": 1,
+    "condition": "L == 0 (empty input string)",
+    "expected_exit_code": 1,
+    "actual_exit_code": 1,
+    "expected_result": "series cannot be empty",
+    "actual_result": "series cannot be empty",
+    "status": "PASS"
+  }
+]

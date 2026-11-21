@@ -1,0 +1,90 @@
+[
+  {
+    "name": "slices of one from one",
+    "expected_exit": 0,
+    "actual_exit": 0,
+    "expected_result": "1",
+    "actual_result": "1",
+    "match": true
+  },
+  {
+    "name": "slices of one from two",
+    "expected_exit": 0,
+    "actual_exit": 0,
+    "expected_result": "1 2",
+    "actual_result": "1 2",
+    "match": true
+  },
+  {
+    "name": "slices of two",
+    "expected_exit": 0,
+    "actual_exit": 0,
+    "expected_result": "35",
+    "actual_result": "35",
+    "match": true
+  },
+  {
+    "name": "slices of two overlap",
+    "expected_exit": 0,
+    "actual_exit": 0,
+    "expected_result": "91 14 42",
+    "actual_result": "91 14 42",
+    "match": true
+  },
+  {
+    "name": "slices can include duplicates",
+    "expected_exit": 0,
+    "actual_exit": 0,
+    "expected_result": "777 777 777 777",
+    "actual_result": "777 777 777 777",
+    "match": true
+  },
+  {
+    "name": "slices of a long series",
+    "expected_exit": 0,
+    "actual_exit": 0,
+    "expected_result": "91849 18493 84939 49390 93904 39042 90424 04243",
+    "actual_result": "91849 18493 84939 49390 93904 39042 90424 04243",
+    "match": true
+  },
+  {
+    "name": "slice length is too large",
+    "expected_exit": 1,
+    "actual_exit": 1,
+    "expected_result": "slice length cannot be greater than series length",
+    "actual_result": "slice length cannot be greater than series length",
+    "match": true
+  },
+  {
+    "name": "slice length is way too large",
+    "expected_exit": 1,
+    "actual_exit": 1,
+    "expected_result": "slice length cannot be greater than series length",
+    "actual_result": "slice length cannot be greater than series length",
+    "match": true
+  },
+  {
+    "name": "slice length cannot be zero",
+    "expected_exit": 1,
+    "actual_exit": 1,
+    "expected_result": "slice length cannot be zero",
+    "actual_result": "slice length cannot be zero",
+    "match": true
+  },
+  {
+    "name": "slice length cannot be negative",
+    "expected_exit": 1,
+    "actual_exit": 1,
+    "expected_result": "slice length cannot be negative",
+    "actual_result": "slice length cannot be negative",
+    "match": true
+  },
+  {
+    "name": "empty series is invalid",
+    "expected_exit": 1,
+    "actual_exit": 1,
+    "expected_result": "series cannot be empty",
+    "actual_result": "series cannot be empty",
+    "match": true
+  }
+]

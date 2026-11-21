@@ -1,0 +1,27 @@
+=== Validation TAP Output ===
+Processing series
+1..11
+ok 1 slices of one from one
+ok 2 slices of one from two
+ok 3 slices of two
+ok 4 slices of two overlap
+ok 5 slices can include duplicates
+ok 6 slices of a long series
+ok 7 slice length is too large
+ok 8 slice length is way too large
+ok 9 slice length cannot be zero
+ok 10 slice length cannot be negative
+ok 11 empty series is invalid
+
+=== Decision Table Verification (11 Cases) ===
+slices of one from one: exit=0, result='1'
+slices of one from two: exit=0, result='1 2'
+slices of two: exit=0, result='35'
+slices of two overlap: exit=0, result='91 14 42'
+slices can include duplicates: exit=0, result='777 777 777 777'
+slices of a long series: exit=0, result='91849 18493 84939 49390 93904 39042 90424 04243'
+slice length is too large: exit=1, result='slice length cannot be greater than series length'
+slice length is way too large: exit=1, result='slice length cannot be greater than series length'
+slice length cannot be zero: exit=1, result='slice length cannot be zero'
+slice length cannot be negative: exit=1, result='slice length cannot be negative'
+empty series is invalid: exit=1, result='series cannot be empty'

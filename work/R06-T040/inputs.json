@@ -1,0 +1,68 @@
+[
+  {
+    "name": "slices of one from one",
+    "series": "1",
+    "len": 1,
+    "condition": "1 <= len <= L (single char)"
+  },
+  {
+    "name": "slices of one from two",
+    "series": "12",
+    "len": 1,
+    "condition": "1 <= len <= L (multiple single chars)"
+  },
+  {
+    "name": "slices of two",
+    "series": "35",
+    "len": 2,
+    "condition": "len == L (single full-length slice)"
+  },
+  {
+    "name": "slices of two overlap",
+    "series": "9142",
+    "len": 2,
+    "condition": "1 < len < L (overlapping slices)"
+  },
+  {
+    "name": "slices can include duplicates",
+    "series": "777777",
+    "len": 3,
+    "condition": "1 < len < L (duplicate values)"
+  },
+  {
+    "name": "slices of a long series",
+    "series": "918493904243",
+    "len": 5,
+    "condition": "1 < len < L (long series)"
+  },
+  {
+    "name": "slice length is too large",
+    "series": "12345",
+    "len": 6,
+    "condition": "len == L + 1 (len > L)"
+  },
+  {
+    "name": "slice length is way too large",
+    "series": "12345",
+    "len": 42,
+    "condition": "len >> L (len much greater than L)"
+  },
+  {
+    "name": "slice length cannot be zero",
+    "series": "12345",
+    "len": 0,
+    "condition": "len == 0"
+  },
+  {
+    "name": "slice length cannot be negative",
+    "series": "123",
+    "len": -1,
+    "condition": "len < 0"
+  },
+  {
+    "name": "empty series is invalid",
+    "series": "",
+    "len": 1,
+    "condition": "L == 0 (empty input string)"
+  }
+]
