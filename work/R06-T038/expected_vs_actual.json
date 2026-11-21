@@ -1,0 +1,29 @@
+{
+  "test_suite": {
+    "total_cases": 10,
+    "status": "PASS",
+    "named_cases": {
+      "rotate a by 0, same output as input": "PASS",
+      "rotate a by 1": "PASS",
+      "rotate a by 26, same output as input": "PASS"
+    }
+  },
+  "metadata_fixtures": {
+    "real_config": {
+      "expected": "PASS",
+      "actual": "PASS"
+    },
+    "missing_reference": {
+      "expected": "PASS_REJECTED",
+      "actual": "PASS_REJECTED"
+    },
+    "missing_test": {
+      "expected": "PASS_REJECTED",
+      "actual": "PASS_REJECTED"
+    },
+    "outside_exercise": {
+      "expected": "PASS_REJECTED",
+      "actual": "PASS_REJECTED"
+    }
+  }
+}

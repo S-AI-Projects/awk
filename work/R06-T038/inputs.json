@@ -1,0 +1,14 @@
+{
+  "config_json_path": "exercises/practice/rotational-cipher/.meta/config.json",
+  "named_test_cases": [
+    "rotate a by 0, same output as input",
+    "rotate a by 1",
+    "rotate a by 26, same output as input"
+  ],
+  "test_fixtures": [
+    "real_config",
+    "missing_reference_fixture",
+    "missing_test_fixture",
+    "outside_exercise_fixture"
+  ]
+}

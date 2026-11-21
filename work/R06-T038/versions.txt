@@ -1,0 +1,4 @@
+Python: Python 3.9.6
+GNU Awk: GNU Awk 5.4.2, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0)
+Bats: Bats 1.14.0
+Bash: GNU bash, version 5.3.20(1)-release (aarch64-apple-darwin27.0.0)

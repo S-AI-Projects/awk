@@ -1,0 +1,32 @@
+{
+  "real_config": {
+    "status": "PASS",
+    "message": "Real metadata resolved all declared files inside exercise root.",
+    "resolved_files": {
+      "solution": [
+        "/Users/ayaz/awk/exercises/practice/rotational-cipher/rotational-cipher.awk"
+      ],
+      "test": [
+        "/Users/ayaz/awk/exercises/practice/rotational-cipher/test-rotational-cipher.bats"
+      ],
+      "example": [
+        "/Users/ayaz/awk/exercises/practice/rotational-cipher/.meta/example.awk"
+      ]
+    }
+  },
+  "missing_reference_fixture": {
+    "status": "PASS_REJECTED",
+    "caught_exception": "FileNotFoundError",
+    "message": "Declared file does not exist: category='example', path='.meta/nonexistent_example.awk' (resolved to /private/var/folders/t2/hsvh23pj2bv6zqgjn60scr6c0000gn/T/tmpbatmxeza/exercise/.meta/nonexistent_example.awk)"
+  },
+  "missing_test_fixture": {
+    "status": "PASS_REJECTED",
+    "caught_exception": "FileNotFoundError",
+    "message": "Declared file does not exist: category='test', path='missing-test.bats' (resolved to /private/var/folders/t2/hsvh23pj2bv6zqgjn60scr6c0000gn/T/tmpboowc23a/exercise/missing-test.bats)"
+  },
+  "outside_exercise_fixture": {
+    "status": "PASS_REJECTED",
+    "caught_exception": "ValueError",
+    "message": "Parent traversal '..' forbidden in path: category='solution', path='../../bin/pr'"
+  }
+}
