@@ -1,0 +1,29 @@
+Baseline cases: 9
+Refactored cases: 9
+Both runs exit 0; Bats assertions verify the same expected outputs.
+
+Baseline output:
+Processing saddle-points
+1..9
+ok 1 Can identify single saddle point
+ok 2 Can identify that empty matrix has no saddle points
+ok 3 Can identify lack of saddle points when there are none
+ok 4 Can identify multiple saddle points in a column
+ok 5 Can identify multiple saddle points in a row
+ok 6 Can identify saddle point in bottom right corner
+ok 7 Can identify saddle points in a non square matrix
+ok 8 Can identify that saddle points in a single column matrix are those with the minimum value
+ok 9 Can identify that saddle points in a single row matrix are those with the maximum value
+
+Refactored output:
+Processing saddle-points
+1..9
+ok 1 Can identify single saddle point
+ok 2 Can identify that empty matrix has no saddle points
+ok 3 Can identify lack of saddle points when there are none
+ok 4 Can identify multiple saddle points in a column
+ok 5 Can identify multiple saddle points in a row
+ok 6 Can identify saddle point in bottom right corner
+ok 7 Can identify saddle points in a non square matrix
+ok 8 Can identify that saddle points in a single column matrix are those with the minimum value
+ok 9 Can identify that saddle points in a single row matrix are those with the maximum value
