@@ -1,0 +1,6 @@
+Reference cases executed: 13
+Micro-example input: 3 4
+Expected: 5 1 0
+Actual: 5 1 0
+GNU Awk 5.4.2, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0)
+Python: 3.14.6 (v3.14.6:c63aec69bd5, Jun 10 2026, 08:07:54) [Clang 21.0.0 (clang-2100.1.1.101)]
