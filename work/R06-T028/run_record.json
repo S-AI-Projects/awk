@@ -1,0 +1,136 @@
+{
+  "tool_versions": {
+    "gawk": "GNU Awk 5.4.2, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0)",
+    "bats": "Bats 1.14.0",
+    "jq": "jq-1.7.1-apple",
+    "python": "Python 3.14.7"
+  },
+  "enabled_cases": {
+    "expected": 19,
+    "counted_in_bats": 19
+  },
+  "metadata_validation": {
+    "real_config_passed": true,
+    "resolved_files": {
+      "solution": [
+        "/Users/dibendughosh/S&AI/assignment/awk/exercises/practice/say/say.awk"
+      ],
+      "test": [
+        "/Users/dibendughosh/S&AI/assignment/awk/exercises/practice/say/test-say.bats"
+      ],
+      "example": [
+        "/Users/dibendughosh/S&AI/assignment/awk/exercises/practice/say/.meta/example.awk"
+      ]
+    },
+    "fixtures": {
+      "missing_reference": {
+        "passed_expectedly": true
+      },
+      "missing_test": {
+        "passed_expectedly": true
+      },
+      "parent_traversal": {
+        "passed_expectedly": true
+      }
+    }
+  },
+  "validate_run": {
+    "returncode": 0,
+    "tests_counted": 19,
+    "stdout": "Processing say\n1..19\nok 1 zero\nok 2 one\nok 3 fourteen\nok 4 twenty\nok 5 twenty-two\nok 6 thirty\nok 7 ninety-nine\nok 8 one hundred\nok 9 one hundred twenty-three\nok 10 two hundred\nok 11 nine hundred ninety-nine\nok 12 one thousand\nok 13 one thousand two hundred thirty-four\nok 14 one million\nok 15 one million two thousand three hundred forty-five\nok 16 one billion\nok 17 a big number\nok 18 numbers below zero are out of range\nok 19 numbers above 999,999,999,999 are out of range\n",
+    "stderr": ""
+  },
+  "temporary_copy_test": {
+    "returncode": 0,
+    "tests_counted": 19,
+    "pass": true
+  },
+  "learner_stub_unsolved": true,
+  "named_cases_reference": {
+    "zero": {
+      "input": "0",
+      "expected": "zero",
+      "actual": "zero",
+      "pass": true
+    },
+    "one": {
+      "input": "1",
+      "expected": "one",
+      "actual": "one",
+      "pass": true
+    },
+    "fourteen": {
+      "input": "14",
+      "expected": "fourteen",
+      "actual": "fourteen",
+      "pass": true
+    }
+  },
+  "assertions": {
+    "child_returncode_is_zero": {
+      "expected": 0,
+      "actual": 0,
+      "pass": true
+    },
+    "bats_test_count": {
+      "expected": 19,
+      "actual": 19,
+      "pass": true
+    },
+    "tests_run_nonzero": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "tests_run_count": {
+      "expected": 19,
+      "actual": 19,
+      "pass": true
+    },
+    "temp_copy_tests_passed": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "learner_stub_unsolved": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "ref_named_case: zero": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "ref_named_case: one": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "ref_named_case: fourteen": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "real_metadata_passed": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "fixture_missing_reference_failed_expectedly": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "fixture_missing_test_failed_expectedly": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "fixture_parent_traversal_failed_expectedly": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  }
+}
