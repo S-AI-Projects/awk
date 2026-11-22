@@ -1,0 +1,209 @@
+{
+  "tool_versions": {
+    "gawk": "GNU Awk 5.4.2, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0)",
+    "bats": "Bats 1.14.0",
+    "jq": "jq-1.7.1-apple",
+    "python": "Python 3.14.7"
+  },
+  "enabled_cases": {
+    "expected": 16,
+    "counted_in_bats": 16
+  },
+  "validate_run": {
+    "returncode": 0,
+    "tests_counted": 16,
+    "stdout": "Processing anagram\n1..16\nok 1 no matches\nok 2 detects two anagrams\nok 3 does not detect anagram subsets\nok 4 detects anagram\nok 5 detects three anagrams\nok 6 detects multiple anagrams with different case\nok 7 does not detect non-anagrams with identical checksum\nok 8 detects anagrams case-insensitively\nok 9 detects anagrams using case-insensitive subject\nok 10 detects anagrams using case-insensitive possible matches\nok 11 does not detect an anagram if the original word is repeated\nok 12 anagrams must use all letters exactly once\nok 13 words are not anagrams of themselves\nok 14 words are not anagrams of themselves even if letter case is partially different\nok 15 words are not anagrams of themselves even if letter case is completely different\nok 16 words other than themselves can be anagrams\n",
+    "stderr": ""
+  },
+  "temporary_copy_test": {
+    "returncode": 0,
+    "tests_counted": 16,
+    "pass": true
+  },
+  "learner_stub_unsolved": true,
+  "named_cases": {
+    "no matches": {
+      "key": "diaper",
+      "expected": "",
+      "actual": "",
+      "pass": true
+    },
+    "detects two anagrams": {
+      "key": "solemn",
+      "expected": "lemons\nmelons",
+      "actual": "lemons\nmelons",
+      "pass": true
+    },
+    "does not detect anagram subsets": {
+      "key": "good",
+      "expected": "",
+      "actual": "",
+      "pass": true
+    }
+  },
+  "startup_overhead": {
+    "runs_sec": [
+      0.004578209001920186,
+      0.0047412909916602075,
+      0.004753957997309044,
+      0.0048349999997299165,
+      0.006758375006029382
+    ],
+    "median_ms": 4.753957997309044,
+    "analysis": "Process startup & gawk bytecode compilation overhead (~5-6ms), constant across input sizes."
+  },
+  "benchmarks": {
+    "size_4": {
+      "size_symbols": 4,
+      "word": "good",
+      "expected_encoded": "dgoo",
+      "iterations_per_rep": 20000,
+      "runs_sec": [
+        0.02337904200248886,
+        0.023446792009053752,
+        0.02365866699256003,
+        0.023965457992744632,
+        0.02418608400330413
+      ],
+      "median_total_sec": 0.02365866699256003,
+      "startup_median_sec": 0.004753957997309044,
+      "net_algo_sec": 0.018904708995250985,
+      "net_cost_per_call_us": 0.9452354497625493,
+      "gross_cost_per_call_us": 1.1829333496280015,
+      "theoretical_operations": {
+        "split_assignments": 4,
+        "sort_comparisons_est": 8.0,
+        "loop_iterations": 4,
+        "concatenations": 4,
+        "total_estimated_ops": 20.0
+      }
+    },
+    "size_6": {
+      "size_symbols": 6,
+      "word": "solemn",
+      "expected_encoded": "elmnos",
+      "iterations_per_rep": 20000,
+      "runs_sec": [
+        0.027829459009808488,
+        0.027967625006567687,
+        0.028188790995045565,
+        0.02825779099657666,
+        0.029102000000420958
+      ],
+      "median_total_sec": 0.028188790995045565,
+      "startup_median_sec": 0.004753957997309044,
+      "net_algo_sec": 0.02343483299773652,
+      "net_cost_per_call_us": 1.171741649886826,
+      "gross_cost_per_call_us": 1.4094395497522783,
+      "theoretical_operations": {
+        "split_assignments": 6,
+        "sort_comparisons_est": 15.51,
+        "loop_iterations": 6,
+        "concatenations": 6,
+        "total_estimated_ops": 33.51
+      }
+    },
+    "size_12": {
+      "size_symbols": 12,
+      "word": "cashregister",
+      "expected_encoded": "aceeghirrsst",
+      "iterations_per_rep": 20000,
+      "runs_sec": [
+        0.0404372089979006,
+        0.04055987499305047,
+        0.04060191700409632,
+        0.040757874987320974,
+        0.041447625000728294
+      ],
+      "median_total_sec": 0.04060191700409632,
+      "startup_median_sec": 0.004753957997309044,
+      "net_algo_sec": 0.03584795900678728,
+      "net_cost_per_call_us": 1.7923979503393639,
+      "gross_cost_per_call_us": 2.030095850204816,
+      "theoretical_operations": {
+        "split_assignments": 12,
+        "sort_comparisons_est": 43.02,
+        "loop_iterations": 12,
+        "concatenations": 12,
+        "total_estimated_ops": 79.02000000000001
+      }
+    }
+  },
+  "assertions": {
+    "child_returncode_is_zero": {
+      "expected": 0,
+      "actual": 0,
+      "pass": true
+    },
+    "bats_test_count": {
+      "expected": 16,
+      "actual": 16,
+      "pass": true
+    },
+    "tests_run_nonzero": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "tests_run_count": {
+      "expected": 16,
+      "actual": 16,
+      "pass": true
+    },
+    "temp_copy_tests_passed": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "learner_stub_unsolved": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "named_case: no matches": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "named_case: detects two anagrams": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "named_case: does not detect anagram subsets": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "correctness_size_4": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "correctness_size_6": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "correctness_size_12": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "benchmark_3_sizes_evaluated": {
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    "benchmark_5_reps_completed": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "startup_overhead_measured": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  }
+}
