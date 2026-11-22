@@ -1,0 +1,75 @@
+{
+  "tool_versions": {
+    "gawk": "GNU Awk 5.4.2, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0)",
+    "bats": "Bats 1.14.0",
+    "jq": "jq-1.7.1-apple",
+    "python": "Python 3.14.7"
+  },
+  "paths": {
+    "exercise_dir": "/Users/dibendughosh/S&AI/assignment/awk/exercises/practice/automated-readability-index",
+    "solution_stub": "/Users/dibendughosh/S&AI/assignment/awk/exercises/practice/automated-readability-index/automated-readability-index.awk",
+    "reference_solution": "/Users/dibendughosh/S&AI/assignment/awk/exercises/practice/automated-readability-index/.meta/example.awk",
+    "test_file": "/Users/dibendughosh/S&AI/assignment/awk/exercises/practice/automated-readability-index/test-automated-readability-index.bats"
+  },
+  "generation_status": {
+    "template_j2_present": false,
+    "tests_toml_present": false,
+    "file_is_hand_maintained": true,
+    "note": "No template.j2 found in .meta/. The track generator (bin/generate_tests) skips exercises without a template. The test file is hand-maintained by the exercise author and should be edited directly when cases change."
+  },
+  "idempotency": {
+    "copy1_sha256": "787dfabc4971027d19a107f9b3a297ca7041e1fe37cb147d3c1d218d39d2b45a",
+    "copy2_sha256": "787dfabc4971027d19a107f9b3a297ca7041e1fe37cb147d3c1d218d39d2b45a",
+    "identical": true,
+    "timestamp_normalization_required": false,
+    "note": "Hand-maintained files have no generated timestamp; two copies are always byte-identical."
+  },
+  "enabled_cases": {
+    "in_bats_file": 3,
+    "expected": 3
+  },
+  "run": {
+    "command": "bin/validate_one_exercise exercises/practice/automated-readability-index",
+    "returncode": 0,
+    "stdout": "Processing automated-readability-index\n1..3\nok 1 Exercism is an online, open-source, free coding platform\nok 2 ARI was designed for military use in 1967\nok 3 A classic pangram\n",
+    "stderr": "",
+    "tests_counted": 3
+  },
+  "assertions": {
+    "child_returncode_is_zero": {
+      "expected": 0,
+      "actual": 0,
+      "pass": true
+    },
+    "bats_test_count": {
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    "tests_run_nonzero": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "tests_run_count": {
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    "two_copies_identical": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "no_template_j2": {
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    "file_is_hand_maintained": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  }
+}
