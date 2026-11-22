@@ -1,0 +1,128 @@
+{
+  "tool_versions": {
+    "gawk": "GNU Awk 5.4.2, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0)",
+    "bats": "Bats 1.14.0",
+    "jq": "jq-1.7.1-apple",
+    "python": "Python 3.14.7"
+  },
+  "enabled_cases": {
+    "expected": 6,
+    "counted_in_bats": 6
+  },
+  "validate_run": {
+    "returncode": 0,
+    "tests_counted": 6,
+    "stdout": "Processing collatz-conjecture\n1..6\nok 1 zero steps for one\nok 2 divide if even\nok 3 even and odd steps\nok 4 large number of even and odd steps\nok 5 zero is an error\nok 6 negative value is an error\n",
+    "stderr": ""
+  },
+  "temporary_copy_test": {
+    "returncode": 0,
+    "tests_counted": 6,
+    "pass": true
+  },
+  "learner_stub_unsolved": true,
+  "named_cases_reference": {
+    "zero steps for one": {
+      "input": "1",
+      "expected": "0",
+      "actual": "0",
+      "pass": true
+    },
+    "divide if even": {
+      "input": "16",
+      "expected": "4",
+      "actual": "4",
+      "pass": true
+    },
+    "even and odd steps": {
+      "input": "12",
+      "expected": "9",
+      "actual": "9",
+      "pass": true
+    }
+  },
+  "language_construct": {
+    "name": "numeric coercion",
+    "examined_constructs": [
+      "record/field splitting",
+      "numeric coercion",
+      "associative-array traversal"
+    ],
+    "selected_construct": "numeric coercion",
+    "presence_in_reference": "Used in $1 < 1, n = $1, while (n > 1), and n % 2 == 0.",
+    "micro_example_coerced": {
+      "snippet": "BEGIN { val = \"10\"; print (val + 0 < 2) }",
+      "output": "0",
+      "expected": "0",
+      "pass": true
+    },
+    "micro_example_pitfall": {
+      "snippet": "BEGIN { val = \"10\"; print (val < 2) }",
+      "output": "1",
+      "expected": "1",
+      "pass": true
+    }
+  },
+  "assertions": {
+    "child_returncode_is_zero": {
+      "expected": 0,
+      "actual": 0,
+      "pass": true
+    },
+    "bats_test_count": {
+      "expected": 6,
+      "actual": 6,
+      "pass": true
+    },
+    "tests_run_nonzero": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "tests_run_count": {
+      "expected": 6,
+      "actual": 6,
+      "pass": true
+    },
+    "temp_copy_tests_passed": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "learner_stub_unsolved": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "ref_named_case: zero steps for one": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "ref_named_case: divide if even": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "ref_named_case: even and odd steps": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "micro_example_coerced_output_0": {
+      "expected": "0",
+      "actual": "0",
+      "pass": true
+    },
+    "micro_example_pitfall_output_1": {
+      "expected": "1",
+      "actual": "1",
+      "pass": true
+    },
+    "micro_examples_differ": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  }
+}
