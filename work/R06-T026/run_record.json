@@ -1,0 +1,240 @@
+{
+  "tool_versions": {
+    "gawk": "GNU Awk 5.4.2, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0)",
+    "bats": "Bats 1.14.0",
+    "jq": "jq-1.7.1-apple",
+    "python": "Python 3.14.7"
+  },
+  "enabled_cases": {
+    "expected": 11,
+    "counted_in_bats": 11
+  },
+  "validate_run": {
+    "returncode": 0,
+    "tests_counted": 11,
+    "stdout": "Processing grains\n1..11\nok 1 grains on square 1\nok 2 grains on square 2\nok 3 grains on square 3\nok 4 grains on square 4\nok 5 grains on square 16\nok 6 grains on square 32\nok 7 grains on square 64\nok 8 square 0 is invalid\nok 9 negative square is invalid\nok 10 square greater than 64 is invalid\nok 11 returns the total number of grains on the board\n",
+    "stderr": ""
+  },
+  "temporary_copy_test": {
+    "returncode": 0,
+    "tests_counted": 11,
+    "pass": true
+  },
+  "learner_stub_unsolved": true,
+  "named_cases_reference": {
+    "grains on square 1": {
+      "input": "1",
+      "expected": "1",
+      "actual": "1",
+      "pass": true
+    },
+    "grains on square 2": {
+      "input": "2",
+      "expected": "2",
+      "actual": "2",
+      "pass": true
+    },
+    "grains on square 3": {
+      "input": "3",
+      "expected": "4",
+      "actual": "4",
+      "pass": true
+    }
+  },
+  "alternative_evaluation": {
+    "all_cases_pass": true,
+    "agree_with_reference": true,
+    "bats_suite_pass": true,
+    "bats_tests_counted": 11,
+    "case_comparisons": [
+      {
+        "case": "grains on square 1",
+        "input": "1",
+        "expected": "1",
+        "ref_output": "1",
+        "alt_output": "1",
+        "ref_rc": 0,
+        "alt_rc": 0,
+        "alt_pass": true,
+        "agree": true
+      },
+      {
+        "case": "grains on square 2",
+        "input": "2",
+        "expected": "2",
+        "ref_output": "2",
+        "alt_output": "2",
+        "ref_rc": 0,
+        "alt_rc": 0,
+        "alt_pass": true,
+        "agree": true
+      },
+      {
+        "case": "grains on square 3",
+        "input": "3",
+        "expected": "4",
+        "ref_output": "4",
+        "alt_output": "4",
+        "ref_rc": 0,
+        "alt_rc": 0,
+        "alt_pass": true,
+        "agree": true
+      },
+      {
+        "case": "grains on square 4",
+        "input": "4",
+        "expected": "8",
+        "ref_output": "8",
+        "alt_output": "8",
+        "ref_rc": 0,
+        "alt_rc": 0,
+        "alt_pass": true,
+        "agree": true
+      },
+      {
+        "case": "grains on square 16",
+        "input": "16",
+        "expected": "32768",
+        "ref_output": "32768",
+        "alt_output": "32768",
+        "ref_rc": 0,
+        "alt_rc": 0,
+        "alt_pass": true,
+        "agree": true
+      },
+      {
+        "case": "grains on square 32",
+        "input": "32",
+        "expected": "2147483648",
+        "ref_output": "2147483648",
+        "alt_output": "2147483648",
+        "ref_rc": 0,
+        "alt_rc": 0,
+        "alt_pass": true,
+        "agree": true
+      },
+      {
+        "case": "grains on square 64",
+        "input": "64",
+        "expected": "9223372036854775808",
+        "ref_output": "9223372036854775808",
+        "alt_output": "9223372036854775808",
+        "ref_rc": 0,
+        "alt_rc": 0,
+        "alt_pass": true,
+        "agree": true
+      },
+      {
+        "case": "square 0 is invalid",
+        "input": "0",
+        "expected": "square must be between 1 and 64",
+        "ref_output": "square must be between 1 and 64",
+        "alt_output": "square must be between 1 and 64",
+        "ref_rc": 1,
+        "alt_rc": 1,
+        "alt_pass": true,
+        "agree": true
+      },
+      {
+        "case": "negative square is invalid",
+        "input": "-1",
+        "expected": "square must be between 1 and 64",
+        "ref_output": "square must be between 1 and 64",
+        "alt_output": "square must be between 1 and 64",
+        "ref_rc": 1,
+        "alt_rc": 1,
+        "alt_pass": true,
+        "agree": true
+      },
+      {
+        "case": "square greater than 64 is invalid",
+        "input": "65",
+        "expected": "square must be between 1 and 64",
+        "ref_output": "square must be between 1 and 64",
+        "alt_output": "square must be between 1 and 64",
+        "ref_rc": 1,
+        "alt_rc": 1,
+        "alt_pass": true,
+        "agree": true
+      },
+      {
+        "case": "returns the total number of grains on the board",
+        "input": "total",
+        "expected": "18446744073709551615",
+        "ref_output": "18446744073709551615",
+        "alt_output": "18446744073709551615",
+        "ref_rc": 0,
+        "alt_rc": 0,
+        "alt_pass": true,
+        "agree": true
+      }
+    ]
+  },
+  "assertions": {
+    "child_returncode_is_zero": {
+      "expected": 0,
+      "actual": 0,
+      "pass": true
+    },
+    "bats_test_count": {
+      "expected": 11,
+      "actual": 11,
+      "pass": true
+    },
+    "tests_run_nonzero": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "tests_run_count": {
+      "expected": 11,
+      "actual": 11,
+      "pass": true
+    },
+    "temp_copy_tests_passed": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "learner_stub_unsolved": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "ref_named_case: grains on square 1": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "ref_named_case: grains on square 2": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "ref_named_case: grains on square 3": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "alt_all_cases_passed": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "alt_bats_suite_passed": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "alt_bats_tests_counted": {
+      "expected": 11,
+      "actual": 11,
+      "pass": true
+    },
+    "implementations_agree_on_all_cases": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  }
+}
