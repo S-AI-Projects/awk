@@ -1,0 +1,150 @@
+{
+  "tool_versions": {
+    "gawk": "GNU Awk 5.4.2, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0)",
+    "bats": "Bats 1.14.0",
+    "jq": "jq-1.7.1-apple",
+    "python": "Python 3.14.7"
+  },
+  "enabled_cases": {
+    "expected": 21,
+    "counted_in_bats": 21
+  },
+  "learner_file_integrity": {
+    "initial_sha256": "fa047e9591f306d9667b8d6f3de338b77f856df0c3cbb4afddec26fb37c68dfb",
+    "final_sha256": "fa047e9591f306d9667b8d6f3de338b77f856df0c3cbb4afddec26fb37c68dfb",
+    "unaltered_across_all_runs": true
+  },
+  "scenarios": {
+    "real_reference": {
+      "exit_code": 0,
+      "test_count": 21,
+      "temp_cleaned": true,
+      "hash_preserved": true
+    },
+    "failing_reference": {
+      "exit_code": 1,
+      "failure_propagated": true,
+      "temp_cleaned": true,
+      "hash_preserved": true
+    },
+    "zero_tests": {
+      "exit_code": 1,
+      "test_count": 0,
+      "failure_propagated": true,
+      "temp_cleaned": true,
+      "hash_preserved": true
+    }
+  },
+  "validate_run": {
+    "returncode": 0,
+    "tests_counted": 21,
+    "stdout": "Processing robot-simulator\n1..21\nok 1 Robots are created with a position and direction\nok 2 Robots are created with a default position and direction\nok 3 Negative positions are allowed\nok 4 changes the direction from north to east\nok 5 changes the direction from east to south\nok 6 changes the direction from south to west\nok 7 changes the direction from west to north\nok 8 changes the direction from north to west\nok 9 changes the direction from west to south\nok 10 changes the direction from south to east\nok 11 changes the direction from east to north\nok 12 increases the y coordinate one when facing north\nok 13 decreases the y coordinate by one when facing south\nok 14 increases the x coordinate by one when facing east\nok 15 decreases the x coordinate by one when facing west\nok 16 instructions to move east and north from README\nok 17 instructions to move west and north\nok 18 instructions to move west and south\nok 19 instructions to move east and north\nok 20 invalid direction\nok 21 invalid instructions\n",
+    "stderr": ""
+  },
+  "learner_stub_unsolved": true,
+  "named_cases_reference": {
+    "Robots are created with a position and direction": {
+      "args": [
+        "-v",
+        "x=0",
+        "-v",
+        "y=0",
+        "-v",
+        "dir=north",
+        "/dev/null"
+      ],
+      "expected": "0 0 north",
+      "actual": "0 0 north",
+      "pass": true
+    },
+    "Robots are created with a default position and direction": {
+      "args": [
+        "/dev/null"
+      ],
+      "expected": "0 0 north",
+      "actual": "0 0 north",
+      "pass": true
+    },
+    "Negative positions are allowed": {
+      "args": [
+        "-v",
+        "x=-1",
+        "-v",
+        "y=-1",
+        "-v",
+        "dir=south",
+        "/dev/null"
+      ],
+      "expected": "-1 -1 south",
+      "actual": "-1 -1 south",
+      "pass": true
+    }
+  },
+  "assertions": {
+    "child_returncode_is_zero": {
+      "expected": 0,
+      "actual": 0,
+      "pass": true
+    },
+    "bats_test_count": {
+      "expected": 21,
+      "actual": 21,
+      "pass": true
+    },
+    "tests_run_nonzero": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "tests_run_count": {
+      "expected": 21,
+      "actual": 21,
+      "pass": true
+    },
+    "learner_stub_unsolved": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "ref_named_case: Robots are created with a position and direction": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "ref_named_case: Robots are created with a default position and direction": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "ref_named_case: Negative positions are allowed": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "real_reference_succeeded": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "failing_reference_failed_expectedly": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "zero_tests_failed_expectedly": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "all_temp_dirs_cleaned": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "learner_files_hash_preserved": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  }
+}
