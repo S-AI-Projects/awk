@@ -1,0 +1,97 @@
+{
+  "tool_versions": {
+    "gawk": "GNU Awk 5.4.2, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0)",
+    "bats": "Bats 1.14.0",
+    "jq": "jq-1.7.1-apple",
+    "python": "Python 3.14.7"
+  },
+  "enabled_cases": {
+    "expected": 25,
+    "counted_in_bats": 25
+  },
+  "validate_run": {
+    "returncode": 0,
+    "tests_counted": 25,
+    "stdout": "Processing line-up\n1..25\nok 1 format smallest non-exceptional ordinal numeral 4\nok 2 format greatest single digit non-exceptional ordinal numeral 9\nok 3 format non-exceptional ordinal numeral 5\nok 4 format non-exceptional ordinal numeral 6\nok 5 format non-exceptional ordinal numeral 7\nok 6 format non-exceptional ordinal numeral 8\nok 7 format exceptional ordinal numeral 1\nok 8 format exceptional ordinal numeral 2\nok 9 format exceptional ordinal numeral 3\nok 10 format smallest two digit non-exceptional ordinal numeral 10\nok 11 format non-exceptional ordinal numeral 11\nok 12 format non-exceptional ordinal numeral 12\nok 13 format non-exceptional ordinal numeral 13\nok 14 format exceptional ordinal numeral 21\nok 15 format exceptional ordinal numeral 22 ending in nd even though it is a multiple of 11\nok 16 format exceptional ordinal numeral 33 ending in rd even though it is a multiple of 11\nok 17 format exceptional ordinal numeral 52 ending in nd even though it is a multiple of 13\nok 18 format exceptional ordinal numeral 62\nok 19 format non-exceptional ordinal numeral 72 ending in nd even though it is a multiple of 12\nok 20 format exceptional ordinal numeral 91 ending in st even though it is a multiple of 13\nok 21 format exceptional ordinal numeral 100\nok 22 format exceptional ordinal numeral 101\nok 23 format non-exceptional ordinal numeral 112\nok 24 format exceptional ordinal numeral 123\nok 25 format large number 972 ending in nd even though it is a multiple of 12\n",
+    "stderr": ""
+  },
+  "temporary_copy_test": {
+    "returncode": 0,
+    "tests_counted": 25,
+    "pass": true
+  },
+  "learner_stub_unsolved": true,
+  "named_cases": {
+    "format smallest non-exceptional ordinal numeral 4": {
+      "input": "Gianna 4",
+      "expected": "Gianna, you are the 4th customer we serve today. Thank you!",
+      "actual": "Gianna, you are the 4th customer we serve today. Thank you!",
+      "pass": true
+    },
+    "format greatest single digit non-exceptional ordinal numeral 9": {
+      "input": "Maarten 9",
+      "expected": "Maarten, you are the 9th customer we serve today. Thank you!",
+      "actual": "Maarten, you are the 9th customer we serve today. Thank you!",
+      "pass": true
+    },
+    "format non-exceptional ordinal numeral 5": {
+      "input": "Petronila 5",
+      "expected": "Petronila, you are the 5th customer we serve today. Thank you!",
+      "actual": "Petronila, you are the 5th customer we serve today. Thank you!",
+      "pass": true
+    }
+  },
+  "all_cases_agreement": true,
+  "assertions": {
+    "child_returncode_is_zero": {
+      "expected": 0,
+      "actual": 0,
+      "pass": true
+    },
+    "bats_test_count": {
+      "expected": 25,
+      "actual": 25,
+      "pass": true
+    },
+    "tests_run_nonzero": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "tests_run_count": {
+      "expected": 25,
+      "actual": 25,
+      "pass": true
+    },
+    "temp_copy_tests_passed": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "learner_stub_unsolved": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "baseline: format smallest non-exceptional ordinal numeral 4": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "baseline: format greatest single digit non-exceptional ordinal numeral 9": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "baseline: format non-exceptional ordinal numeral 5": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "all_cases_before_after_agree": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  }
+}
