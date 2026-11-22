@@ -1,0 +1,118 @@
+{
+  "tool_versions": {
+    "gawk": "GNU Awk 5.4.2, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0)",
+    "bats": "Bats 1.14.0",
+    "jq": "jq-1.7.1-apple",
+    "python": "Python 3.14.7"
+  },
+  "enabled_cases": {
+    "in_bats_file": 18,
+    "expected": 18
+  },
+  "validate_run": {
+    "returncode": 0,
+    "tests_counted": 18,
+    "stdout": "Processing ocr-numbers\n1..18\nok 1 Recognizes 0\nok 2 Recognizes 1\nok 3 Unreadable but correctly sized inputs return ?\nok 4 Input with a number of lines that is not a multiple of four raises an error\nok 5 Input with a number of columns that is not a multiple of three raises an error\nok 6 Recognizes 110101100\nok 7 Garbled numbers in a string are replaced with ?\nok 8 Recognizes 2\nok 9 Recognizes 3\nok 10 Recognizes 4\nok 11 Recognizes 5\nok 12 Recognizes 6\nok 13 Recognizes 7\nok 14 Recognizes 8\nok 15 Recognizes 9\nok 16 Recognizes string of decimal numbers\nok 17 Numbers separated by empty lines are recognized. Lines are joined by commas.\nok 18 No input\n",
+    "stderr": ""
+  },
+  "mutation": {
+    "description": "Corrupt digit-1 lookup key: change 5-space prefix to 4-space",
+    "original_key": "     |  |",
+    "mutant_key": "    |   |",
+    "original_key_repr": "'     |  |'",
+    "mutant_key_repr": "'    |   |'",
+    "diff": "< digit[\"     |  |\"] = \"1\"\n> digit[\"    |   |\"] = \"1\""
+  },
+  "named_cases": {
+    "Recognizes 0": {
+      "input": " _ \n| |\n|_|\n   \n",
+      "original_output": "0",
+      "original_rc": 0,
+      "mutant_output": "0",
+      "mutant_rc": 0
+    },
+    "Recognizes 1": {
+      "input": "   \n  |\n  |\n   \n",
+      "original_output": "1",
+      "original_rc": 0,
+      "mutant_output": "?",
+      "mutant_rc": 0
+    },
+    "Unreadable but correctly sized inputs return ?": {
+      "input": "   \n  _\n  |\n   \n",
+      "original_output": "?",
+      "original_rc": 0,
+      "mutant_output": "?",
+      "mutant_rc": 0
+    }
+  },
+  "mutant_rejecting_tests": [
+    "Recognizes 1",
+    "Recognizes 110101100",
+    "Garbled numbers in a string are replaced with ?",
+    "Recognizes string of decimal numbers",
+    "Numbers separated by empty lines are recognized. Lines are joined by commas."
+  ],
+  "assertions": {
+    "child_returncode_is_zero": {
+      "expected": 0,
+      "actual": 0,
+      "pass": true
+    },
+    "bats_test_count": {
+      "expected": 18,
+      "actual": 18,
+      "pass": true
+    },
+    "tests_run_nonzero": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "tests_run_count": {
+      "expected": 18,
+      "actual": 18,
+      "pass": true
+    },
+    "orig_recognizes_0": {
+      "expected": "0",
+      "actual": "0",
+      "pass": true
+    },
+    "orig_recognizes_1": {
+      "expected": "1",
+      "actual": "1",
+      "pass": true
+    },
+    "orig_unreadable_returns_?": {
+      "expected": "?",
+      "actual": "?",
+      "pass": true
+    },
+    "mutant_digit0_unchanged": {
+      "expected": "0",
+      "actual": "0",
+      "pass": true
+    },
+    "mutant_digit1_now_?": {
+      "expected": "?",
+      "actual": "?",
+      "pass": true
+    },
+    "mutant_unreadable_still_?": {
+      "expected": "?",
+      "actual": "?",
+      "pass": true
+    },
+    "mutant_differs_from_original_on_1": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "recognizes_1_rejects_mutant": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  }
+}
