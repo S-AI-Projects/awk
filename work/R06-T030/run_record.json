@@ -1,0 +1,214 @@
+{
+  "task": "R06-T030",
+  "exercise": "resistor-color-trio",
+  "tool_versions": {
+    "gawk": "GNU Awk 5.4.2, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0)",
+    "bats": "Bats 1.14.0",
+    "jq": "jq-1.7.1-apple",
+    "python": "Python 3.14.7"
+  },
+  "bats_test_count": 13,
+  "named_cases": {
+    "Orange and orange and black": {
+      "input": "orange orange black",
+      "expected": "33 ohms",
+      "actual": "33 ohms",
+      "returncode": 0,
+      "passed": true
+    },
+    "Blue and grey and brown": {
+      "input": "blue grey brown",
+      "expected": "680 ohms",
+      "actual": "680 ohms",
+      "returncode": 0,
+      "passed": true
+    },
+    "Red and black and red": {
+      "input": "red black red",
+      "expected": "2 kiloohms",
+      "actual": "2 kiloohms",
+      "returncode": 0,
+      "passed": true
+    }
+  },
+  "decision_table": {
+    "all_matched": true,
+    "rows": [
+      {
+        "case": "Orange and orange and black",
+        "input": "orange orange black",
+        "expected": "33 ohms",
+        "actual": "33 ohms",
+        "passed": true
+      },
+      {
+        "case": "Blue and grey and brown",
+        "input": "blue grey brown",
+        "expected": "680 ohms",
+        "actual": "680 ohms",
+        "passed": true
+      },
+      {
+        "case": "Red and black and red",
+        "input": "red black red",
+        "expected": "2 kiloohms",
+        "actual": "2 kiloohms",
+        "passed": true
+      },
+      {
+        "case": "Green and brown and orange",
+        "input": "green brown orange",
+        "expected": "51 kiloohms",
+        "actual": "51 kiloohms",
+        "passed": true
+      },
+      {
+        "case": "Yellow and violet and yellow",
+        "input": "yellow violet yellow",
+        "expected": "470 kiloohms",
+        "actual": "470 kiloohms",
+        "passed": true
+      },
+      {
+        "case": "Blue and violet and blue",
+        "input": "blue violet blue",
+        "expected": "67 megaohms",
+        "actual": "67 megaohms",
+        "passed": true
+      },
+      {
+        "case": "Minimum possible value",
+        "input": "black black black",
+        "expected": "0 ohms",
+        "actual": "0 ohms",
+        "passed": true
+      },
+      {
+        "case": "Maximum possible value",
+        "input": "white white white",
+        "expected": "99 gigaohms",
+        "actual": "99 gigaohms",
+        "passed": true
+      },
+      {
+        "case": "First two colors make an invalid octal number",
+        "input": "black grey black",
+        "expected": "8 ohms",
+        "actual": "8 ohms",
+        "passed": true
+      },
+      {
+        "case": "Ignore extra colors",
+        "input": "blue green yellow orange",
+        "expected": "650 kiloohms",
+        "actual": "650 kiloohms",
+        "passed": true
+      }
+    ]
+  },
+  "scenarios": {
+    "real_reference": {
+      "returncode": 0,
+      "passed_tests": 13,
+      "failed_tests": 0,
+      "total_executed": 13
+    },
+    "failing_reference": {
+      "returncode": 1,
+      "temp_cleaned": true,
+      "failed_expectedly": true
+    },
+    "zero_tests": {
+      "returncode": 1,
+      "tests_run": 0,
+      "temp_cleaned": true,
+      "zero_tests_failed": true
+    }
+  },
+  "file_protection": {
+    "initial_hash": "f24fb8f97ca628345685ef6e78f349d5cfe86bee162f48c84ce2842abed28552",
+    "final_hash": "f24fb8f97ca628345685ef6e78f349d5cfe86bee162f48c84ce2842abed28552",
+    "preserved": true
+  },
+  "assertions": [
+    {
+      "name": "child_returncode_is_zero",
+      "expected": 0,
+      "actual": 0,
+      "passed": true
+    },
+    {
+      "name": "bats_test_count",
+      "expected": 13,
+      "actual": 13,
+      "passed": true
+    },
+    {
+      "name": "tests_run_nonzero",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "learner_stub_unsolved",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "named_case_orange_orange_black",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "named_case_blue_grey_brown",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "named_case_red_black_red",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "decision_table_all_matched",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "real_reference_succeeded",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "failing_reference_failed_expectedly",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "zero_tests_failed_expectedly",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "all_temp_dirs_cleaned",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "learner_files_hash_preserved",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    }
+  ],
+  "overall_status": "PASS"
+}
